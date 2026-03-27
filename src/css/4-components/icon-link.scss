@@ -1,0 +1,17 @@
+.iconLink {
+    align-items: center;
+    color: var(--color-link);
+    display: inline-flex;
+    font-weight: 500;
+    gap: .25em;
+    transition: var(--duration-m);
+
+    svg {
+        height: 1.25em;
+        width: 1.25em;
+    }
+
+    &:hover {
+        color: var(--color-link-hover);
+    }
+}

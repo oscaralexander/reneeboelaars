@@ -1,0 +1,51 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Hellix';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Hellix-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Hellix-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Hellix';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/Hellix-SemiBold.woff2') format('woff2'),
+         url('/assets/fonts/Hellix-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/Inter-Medium.woff2') format('woff2'),
+         url('/assets/fonts/Inter-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Martina Plantijn';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Martina-Plantijn-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Martina Plantijn';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/fonts/Martina-Plantijn-Italic.woff2') format('woff2');
+}

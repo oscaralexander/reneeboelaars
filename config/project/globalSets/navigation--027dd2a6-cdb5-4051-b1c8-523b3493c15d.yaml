@@ -1,0 +1,30 @@
+fieldLayouts:
+  63caaf21-30d7-4160-80d3-122f3f2f16bb:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-17T12:09:24+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee289498-84b6-41c5-8580-a2e14fde1dcb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Navigation
+        uid: c699e0ac-527d-4e7d-b276-a917ba1ac2f0
+        userCondition: null
+handle: navigation
+name: Navigation
+sortOrder: 4

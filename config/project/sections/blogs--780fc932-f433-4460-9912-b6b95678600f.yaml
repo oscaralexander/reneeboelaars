@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 0d6772dd-d5bb-41e6-a5fa-3ed12a345861 # Blog
+handle: blogs
+maxAuthors: 1
+name: Blogs
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/_entry.twig
+    uriFormat: 'blog/{slug}'
+type: channel

@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: isFullWidth
+instructions: 'Toggle on to make the section background color span the entire screen, and images span half.'
+name: 'Full-width section?'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

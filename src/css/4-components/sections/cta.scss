@@ -1,0 +1,38 @@
+@use '@css/2-tools/mixins' as *;
+
+.cta {
+    &__content {
+        border-radius: var(--border-radius-l);
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-xl);
+        padding: var(--section-padding-y);
+        text-align: center;
+    }
+
+    &__main {
+        flex: 1;
+    }
+
+    &__title {
+        font-size: var(--font-size-xxl);
+    }
+
+    &__cta {
+        .ctas {
+            justify-content: center;
+        }
+    }
+
+    @include screen-min(l) {
+        &__content {
+            padding-right: calc(var(--gutter) * 2);
+            align-items: center;
+        }
+
+        &__text {
+            font-size: var(--font-size-l);
+            text-align: center;
+        }
+    }
+}

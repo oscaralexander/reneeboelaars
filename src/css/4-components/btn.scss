@@ -1,0 +1,84 @@
+@use '@css/2-tools/mixins' as *;
+
+.btn {
+    align-items: center;
+    background: var(--btn-bg-color);
+    border: none;
+    border-radius: var(--btn-border-radius);
+    box-shadow: inset 0 0 0 1px var(--btn-border-color);
+    color: var(--btn-color);
+    cursor: pointer;
+    display: inline-flex;
+    font-variant-numeric: tabular-nums;
+    font-weight: var(--btn-font-weight);
+    gap: .5em;
+    height: var(--btn-height);
+    justify-content: center;
+    outline: var(--btn-outline);
+    outline-offset: 2px;
+    padding: 1px calc(var(--btn-height) * .5);
+    position: relative;
+    text-decoration: none;
+    text-wrap: nowrap;
+    transition: background var(--duration-m),
+        box-shadow var(--duration-m),
+        color var(--duration-m);
+    user-select: none;
+
+    &:hover {
+        background: var(--btn-bg-color-hover);
+        box-shadow: inset 0 0 0 1px var(--btn-border-color-hover);
+        color: var(--btn-color-hover);
+    }
+
+    .lucide {
+        flex: 0 0 1.25em;
+        height: 1.25em;
+        width: 1.25em;
+        stroke-width: 1.75;
+    }
+
+    &:active {
+        padding-bottom: 0;
+        padding-top: 2px;
+    }
+
+    &--block {
+        flex: 1;
+        width: 100%;
+    }
+
+    &--inverted {
+        background: var(--btn-inverted-bg-color);
+        box-shadow: inset 0 0 0 1px var(--btn-inverted-border-color);
+        color: var(--btn-inverted-color);
+
+        &:hover {
+            background: var(--btn-inverted-bg-color-hover);
+            box-shadow: inset 0 0 0 1px var(--btn-inverted-border-color-hover);
+            color: var(--btn-inverted-color-hover);
+        }
+    }
+
+    &--large {
+        font-size: var(--font-size-l);
+        height: var(--btn-height-l);
+        padding: 1px calc(var(--btn-height-l) * .5);
+    }
+
+    &--primary {
+        background: var(--btn-primary-bg-color);
+        box-shadow: inset 0 0 0 1px var(--btn-primary-border-color);
+        color: var(--btn-primary-color);
+
+        &:hover {
+            background: var(--btn-primary-bg-color-hover);
+            box-shadow: inset 0 0 0 1px var(--btn-primary-border-color-hover);
+            color: var(--btn-primary-color-hover);
+        }
+    }
+
+    @include screen-min(m) {
+        padding: 1px 1.75em;
+    }
+}

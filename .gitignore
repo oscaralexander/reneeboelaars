@@ -1,0 +1,13 @@
+/.env
+/.idea
+/config/license.key
+/node_modules
+/vendor
+.DS_Store
+
+# Ignore everything inside web/uploads
+/storage/uploads/**/*
+
+# But keep the directories themselves
+!/storage/uploads/
+!/storage/uploads/**/

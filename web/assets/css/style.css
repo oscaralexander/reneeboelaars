@@ -1,0 +1,113 @@
+@charset 'utf-8';
+
+:root {
+    --color-1: rgb(28, 76, 96);
+    --color-1-rgb: 28, 76, 96;
+
+    --color-link: var(--color-1);
+    --color-link-hover: var(--color-text-hc);
+
+    /* Nav */
+    --nav-border-radius: 0;
+    --nav-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    --nav-color-link: var(--color-1);
+    --nav-color-link-hover: var(--color-text-hc);
+    --nav-height: 3.5rem;
+    --nav-offset-x: 0rem;
+    --nav-offset-y: 0rem;
+
+    /* Themes */
+    --theme-0-color: var(--color-text);
+    --theme-0-color-bg: var(--color-bg);
+    --theme-0-color-bg-tint: var(--color-bg-tint);
+    --theme-0-color-text: var(--color-text);
+    --theme-0-color-text-accent: var(--color-1);
+    --theme-0-color-text-hc: var(--color-text-hc);
+    --theme-0-color-text-lc: var(--color-text-lc);
+
+    --theme-1-color: rgb(28, 76, 96);
+    --theme-1-color-bg: rgb(236, 246, 247);
+    --theme-1-color-bg-tint: rgb(255, 255, 255);
+    --theme-1-color-text: var(--color-text);
+    --theme-1-color-text-accent: var(--color-1);
+    --theme-1-color-text-hc: var(--color-text-hc);
+    --theme-1-color-text-lc: var(--color-text-lc);
+
+    --theme-inverted-color: rgb(236, 246, 247);
+    --theme-inverted-color-bg: rgb(28, 76, 96);
+    --theme-inverted-color-bg-tint: rgb(21, 57, 72);
+    --theme-inverted-color-border: rgba(236, 246, 247, .15);
+    --theme-inverted-color-border-hc: rgba(236, 246, 247, .3);
+    --theme-inverted-color-border-lc: rgba(236, 246, 247, .1);
+    --theme-inverted-color-text: rgb(236, 246, 247);
+    --theme-inverted-color-text-hc: rgb(255, 255, 255);
+    --theme-inverted-color-text-lc: rgba(167, 211, 219);
+    --theme-inverted-color-link: rgb(255, 255, 255, .75);
+    --theme-inverted-color-link-hover: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-color: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-color-hover: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-border-color: rgba(255, 255, 255, .25);
+    --theme-inverted-btn-primary-border-color-hover: rgba(255, 255, 255, .35);
+/* 
+
+    --theme-1-color-bg: #E6F3FC;
+    --theme-1-color-text: var(--color-text);
+    --theme-1-color-text-accent: var(--color-1);
+    --theme-1-color-text-hc: var(--color-text-hc);
+    --theme-1-color-text-lc: var(--color-text-lc);
+
+    --theme-2-color-bg: #F3ECFF;
+    --theme-2-color-text: var(--color-text);
+    --theme-2-color-text-accent: var(--color-1);
+    --theme-2-color-text-hc: var(--color-text-hc);
+    --theme-2-color-text-lc: var(--color-text-lc);
+
+    --theme-3-color-bg: #F9F6C6;
+    --theme-3-color-text: var(--color-text);
+    --theme-3-color-text-accent: var(--color-1);
+    --theme-3-color-text-hc: var(--color-text-hc);
+    --theme-3-color-text-lc: var(--color-text-lc);
+
+    --theme-4-color-bg: #F9F6F3;
+    --theme-4-color-text: var(--color-text);
+    --theme-4-color-text-accent: var(--color-1);
+    --theme-4-color-text-hc: var(--color-text-hc);
+    --theme-4-color-text-lc: var(--color-text-lc);
+
+    --theme-inverted-color: rgb(255, 255, 255, .75);
+    --theme-inverted-color-bg: rgb(0, 0, 0);
+    --theme-inverted-color-bg-tint: rgb(22, 12, 44);
+
+    --theme-inverted-color-text: rgb(255, 255, 255, .65);
+    --theme-inverted-color-text-accent: rgb(255, 255, 255);
+    --theme-inverted-color-text-hc: rgb(255, 255, 255);
+    --theme-inverted-color-text-lc: rgba(255, 255, 255, .5);
+
+    --theme-inverted-color-link: rgb(255, 255, 255, .75);
+    --theme-inverted-color-link-hover: rgb(255, 255, 255);
+
+    --theme-inverted-btn-primary-color: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-color-hover: rgb(255, 255, 255);
+    --theme-inverted-btn-primary-border-color: rgba(255, 255, 255, .25);
+    --theme-inverted-btn-primary-border-color-hover: rgba(255, 255, 255, .35);
+    */
+
+    @media (min-width: 768px) {
+        --logo-height: 5rem;
+        --nav-border-radius: 1rem;
+        --nav-color-link: var(--color-text);
+        --nav-color-link-hover: #000;
+        --nav-box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .1);
+        --nav-height: 7rem;
+        --nav-offset-x: 1rem;
+        --nav-offset-y: 1rem;
+    }
+}
+
+.testimonial__body em,
+.testimonial__body i,
+.testimonialAlt__body em,
+.testimonialAlt__body i {
+    background: rgb(121, 219, 179, .33) !important;
+    font-style: normal !important;
+}

@@ -1,0 +1,41 @@
+<section class="section masterclass {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %} js-equinox">
+    <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme }}{% endif %}">
+        <div class="grid grid--gap-xl grid--end l:grid--gap-xxl">
+            <div class="grid__col l:grid__col--span-6">
+                <div class="masterclass__content">
+                    <div class="stack stack--gap-m">
+                        <h5 class="section__eyebrow">{{ section.eyebrow }}</h5>
+                        <h2 class="textSplit js-textSplit">{{ section.title }}</h2>
+                        <div class="richText">
+                            {{ section.richText }}
+                        </div>
+                    </div>
+                    <div class="cta__cta">
+                        {% if section.ctas %}
+                            {% include '_partials/ctas' with { ctas: section.ctas } %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="grid__col l:grid__col--span-6">
+                <div class="masterclass__form u-theme-0">
+                    {% if (section.formHeading is not empty) or (section.formIntro is not empty) %}
+                        <div class="stack stack--gap-s">
+                            {% if (section.formHeading is not empty) %}
+                                <h3 class="masterclass__formHeading">{{ section.formHeading }}</h3>
+                            {% endif %}
+                            {% if (section.formIntro is not empty) %}
+                                <div class="masterclass__formIntro richText">
+                                    {{ section.formIntro }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    <div class="mailblueForm__form">
+                        {{ section.embedCode|raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

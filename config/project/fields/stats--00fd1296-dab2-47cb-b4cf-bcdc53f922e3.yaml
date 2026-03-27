@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: stats
+instructions: null
+name: Stats
+searchable: false
+settings:
+  createButtonLabel: 'New stat'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 99eb0135-a737-4a15-9781-85b26516afe3 # Stat
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

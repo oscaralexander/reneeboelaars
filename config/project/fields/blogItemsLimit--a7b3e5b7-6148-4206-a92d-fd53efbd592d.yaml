@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: blogItemsLimit
+instructions: "If you don't manually select the blog entries (above), all blog entries will be displayed. You can limit the number of entries displayed with this field. Leave empty to display all (12 per page)."
+name: 'Blog items limit'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  step: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

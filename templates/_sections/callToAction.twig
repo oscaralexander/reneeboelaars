@@ -1,0 +1,17 @@
+<section class="section cta js-equinox">
+    <div class="wrapper section__inner">
+        <div class="cta__content {% if section.theme is not empty %}u-theme-{{ section.theme }}{% endif %}">
+            <div class="cta__main stack stack--gap-m">
+                <h3 class="cta__title textSplit js-textSplit">{{ section.title }}</h3>
+                <div class="cta__text richText">
+                    {{ section.richText }}
+                </div>
+            </div>
+            <div class="cta__cta">
+                {% if section.ctas %}
+                    {% include '_partials/ctas' with { ctas: section.ctas } %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

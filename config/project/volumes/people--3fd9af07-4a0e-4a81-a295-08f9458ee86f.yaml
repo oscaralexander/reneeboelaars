@@ -1,0 +1,51 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  f80c2c7f-e5d7-4fd0-abfb-5b0b3f586f6b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-16T14:23:22+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: d0606a13-e8b2-4fd4-987d-70214a1f88b3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8a5507d3-f760-4d9a-94f8-fb23f5c8f732
+        userCondition: null
+fs: local
+handle: people
+name: People
+sortOrder: 6
+subpath: people
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

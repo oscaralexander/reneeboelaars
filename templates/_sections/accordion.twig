@@ -1,0 +1,31 @@
+<section class="section accordion {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %} js-accordion js-equinox">
+    <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
+        <div class="grid grid--center grid--gap-xxl">
+            <div class="grid__col l:grid__col--span-6">
+                {% include '_partials/sectionHeader' with { section: section } %}
+            </div>
+            <div class="grid__col l:grid__col--span-6">
+                <div class="accordion__items">
+                    {% for item in section.accordionItems.all() %}
+                        <article class="accordionItem js-accordionItem">
+                            <button
+                                aria-controls="accordion-item-{{ item.id }}"
+                                aria-expanded="{{ loop.index == 1 ? 'true' : 'false' }}"
+                                class="accordionItem__toggle js-accordionItemToggle"
+                                type="button"
+                            >
+                                <h5 class="accordionItem__eyebrow">{{ item.eyebrow }}</h5>
+                                <h3 class="accordionItem__title">{{ item.title }}</h3>
+                            </button>
+                            <div aria-labelledby="accordion-item-{{ item.id }}" class="accordionItem__content" role="region">
+                                <div class="accordionItem__body richText">
+                                    {{ item.body }}
+                                </div>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

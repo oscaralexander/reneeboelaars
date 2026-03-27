@@ -1,0 +1,149 @@
+columnSuffix: null
+handle: sections
+instructions: null
+name: Sections
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 878e0c1f-b9cf-4242-a3f5-f50aad792696 # Accordion
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - b071e616-7307-4613-961a-77e04a35e223 # Blog Index
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 2ba1c57c-3cf0-40af-9276-7f085079ea8d # Call to Action
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 1696b5e5-1e56-4fd6-9ae9-aad6d6b67623 # Cards
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 21f0753c-da41-4fe9-8bdc-c851beb5acd5 # Columns
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - a8b4b6c6-4b9d-426f-a21f-34a960809b80 # Companies
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 50e0cd0c-38a3-4d3d-a601-113f88273bf0 # Hero
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 6cd47c8a-7515-48fa-a3bd-a5eb0bb5b18d # MailBlue Form
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 010a5f91-ff2c-499b-a3d4-f00c9311314e # Masterclass
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 9ed560e3-bb58-46ac-b3c8-3b3667509a65 # People
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - c8d42f98-440c-490c-aed6-38551d980f24 # Products
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 93be216b-1870-4719-b415-8b80b103c6cc # Stats
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 3e3cd250-f9e2-4359-b2bd-61a1652fb125 # Testimonials
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 692ce4fc-23b7-44b2-85a5-bab07af1139b # Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - d9d07fc4-9677-4550-b080-2a25872689be # Text & Media
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ba552aa7-6c34-4d78-8422-289c1081a004 # Ticker
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

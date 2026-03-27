@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: color
+instructions: null
+name: Color
+searchable: false
+settings:
+  allowCustomColors: true
+  palette:
+    -
+      __assoc__:
+        -
+          - color
+          - '#9380c9'
+        -
+          - label
+          - Purple
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: testimonials
+instructions: 'Leave empty to display ALL testimonials.'
+name: Testimonials
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add testimonials'
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:393a1e84-3c53-4162-9d7c-74ee0bab53c5' # Testimonials
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

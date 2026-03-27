@@ -1,0 +1,44 @@
+{% set sameAs = [] %}
+{% if contact.instagramUrl %}
+    {% set sameAs = sameAs|merge([contact.instagramUrl.url]) %}
+{% endif %}
+{% if contact.linkedinUrl %}
+    {% set sameAs = sameAs|merge([contact.linkedinUrl.url]) %}
+{% endif %}
+{% if contact.xUrl %}
+    {% set sameAs = sameAs|merge([contact.xUrl.url]) %}
+{% endif %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        {% if contact.address.one() %}
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "{{ contact.address.one().country }}",
+                "addressLocality": "{{ contact.address.one().locality }}",
+                "postalCode": "{{ contact.address.one().postalCode }}",
+                "streetAddress": "{{ contact.address.one().addressLine1 }}"
+            },
+        {% endif %}
+        {% if contact.email %}
+            "email": "{{ contact.email }}",
+        {% endif %}
+        {% if brand.logoNav.one() %}
+            "logo": "{{ brand.logoNav.one().url }}",
+        {% endif %}
+        "name": "{{ currentSite.name }}",
+        {% if contact.phone %}
+            "telephone": "{{ contact.phone|replace({' ': ''}) }}",
+        {% endif %}
+        "url": "{{ siteUrl }}",
+        {% if contact.vatId %}
+            "vatID": "{{ contact.vatId }}",
+        {% endif %}
+        {% if sameAs|length > 0 %}
+            "sameAs": ["{{ sameAs|join('", "')|raw }}"]
+        {% else %}
+            "sameAs": []
+        {% endif %}
+    }
+</script>

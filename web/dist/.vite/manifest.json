@@ -1,0 +1,12 @@
+{
+  "src/js/index.js": {
+    "file": "assets/app-C_U-hmz3.js",
+    "name": "app",
+    "src": "src/js/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-qcfnUff2.css"
+    ],
+    "integrity": "sha384-SlDAVnGOFhGT4qjooXJErTANrSyxBOkUJaKOoy0+WgeXhJo6D4cOmzC7Wl3I64ky"
+  }
+}

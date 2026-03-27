@@ -1,0 +1,168 @@
+{% set image = section.image.one() %}
+<section class="
+    section
+    textMedia
+    textMedia--{{ section.textPosition }}
+    textMedia--{{ section.isStickyMedia ? 'stickyMedia' : 'staticMedia' }}
+    {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}
+    js-equinox
+">
+    {% if section.isFullWidth and image %}
+        <picture class="textMedia__pictureLarge {% if settings.useParallax %}textMedia__pictureLarge--parallax{% endif %}">
+            <source
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                srcset="
+                    {{ image.getUrl({ format: 'webp', width: 480 }) }} 480w,
+                    {{ image.getUrl({ format: 'webp', width: 592 }) }} 592w,
+                    {{ image.getUrl({ format: 'webp', width: 768 }) }} 768w,
+                    {{ image.getUrl({ format: 'webp', width: 1024 }) }} 1024w,
+                    {{ image.getUrl({ format: 'webp', width: 1184 }) }} 1184w,
+                    {{ image.getUrl({ format: 'webp', width: 1536 }) }} 1536w,
+                    {{ image.getUrl({ format: 'webp', width: 2048 }) }} 2048w
+                "
+                type="image/webp"
+            />
+            <img
+                alt="{{ image.alt }}"
+                class="textMedia__image"
+                decoding="async"
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                src="{{ image.getUrl({ format: 'webp', width: 2048 }) }}"
+                srcset="
+                    {{ image.getUrl({ format: 'webp', width: 480 }) }} 480w,
+                    {{ image.getUrl({ format: 'webp', width: 592 }) }} 592w,
+                    {{ image.getUrl({ format: 'webp', width: 768 }) }} 768w,
+                    {{ image.getUrl({ format: 'webp', width: 1024 }) }} 1024w,
+                    {{ image.getUrl({ format: 'webp', width: 1184 }) }} 1184w,
+                    {{ image.getUrl({ format: 'webp', width: 1536 }) }} 1536w,
+                    {{ image.getUrl({ format: 'webp', width: 2048 }) }} 2048w
+                "
+            >
+        </picture>
+    {% endif %}
+    <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme }}{% endif %}">
+        <div class="
+            grid
+            grid--gap-xl
+            l:grid--gap-xxl
+            {% if section.isStickyMedia == false %}grid--middle{% endif %}
+            {% if section.textPosition == 'right' %}l:grid--reverse{% endif %}
+            textMedia__content
+        ">
+            <div class="grid__col l:grid__col--span-6 textMedia__textCol">
+                <div class="textMedia__text stack stack--gap-l">
+                    {% include '_partials/sectionHeader' with { section: section } %}
+                    <div class="textMedia__media">
+                        {% if section.youtubeVideoId %}
+                            <div class="textMedia__video textMedia__video--16:9">
+                                <iframe
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                    frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    src="https://www.youtube.com/embed/{{ section.youtubeVideoId }}"
+                                    title="YouTube video player"
+                                ></iframe>
+                            </div>
+                        {% else %}
+                            {% if image %}
+                                <picture class="textMedia__picture {% if settings.useParallax %}textMedia__picture--parallax{% endif %}" style="aspect-ratio: {{ image.width }} / {{ image.height }};">
+                                    <source
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                        srcset="
+                                            {{ image.getUrl({ format: 'webp', width: 480 }) }} 480w,
+                                            {{ image.getUrl({ format: 'webp', width: 592 }) }} 592w,
+                                            {{ image.getUrl({ format: 'webp', width: 768 }) }} 768w,
+                                            {{ image.getUrl({ format: 'webp', width: 1024 }) }} 1024w,
+                                            {{ image.getUrl({ format: 'webp', width: 1184 }) }} 1184w,
+                                            {{ image.getUrl({ format: 'webp', width: 1536 }) }} 1536w,
+                                            {{ image.getUrl({ format: 'webp', width: 2048 }) }} 2048w
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        alt="{{ image.alt }}"
+                                        class="textMedia__image"
+                                        decoding="async"
+                                        loading="lazy"
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                        src="{{ image.getUrl({ width: 2048 }) }}"
+                                        srcset="
+                                            {{ image.getUrl({ width: 480 }) }} 480w,
+                                            {{ image.getUrl({ width: 592 }) }} 592w,
+                                            {{ image.getUrl({ width: 768 }) }} 768w,
+                                            {{ image.getUrl({ width: 1024 }) }} 1024w,
+                                            {{ image.getUrl({ width: 1184 }) }} 1184w,
+                                            {{ image.getUrl({ width: 1536 }) }} 1536w,
+                                            {{ image.getUrl({ width: 2048 }) }} 2048w
+                                        "
+                                    >
+                                </picture>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <div class="textMedia__text richText">
+                        {{ section.text }}
+                    </div>
+                    {% if section.ctas %}
+                        {% include '_partials/ctas' with { ctas: section.ctas } %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="grid__col l:grid__col--span-6 textMedia__mediaCol">
+                {% if not section.isFullWidth %}
+                    <div class="textMedia__media">
+                        {% if section.youtubeVideoId %}
+                            <div class="textMedia__video textMedia__video--16:9">
+                                <iframe
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                    frameborder="0"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    src="https://www.youtube.com/embed/{{ section.youtubeVideoId }}"
+                                    title="YouTube video player"
+                                ></iframe>
+                            </div>
+                        {% else %}
+                            {% if image %}
+                                <picture class="textMedia__picture {% if settings.useParallax %}textMedia__picture--parallax{% endif %}" style="aspect-ratio: {{ image.width }} / {{ image.height }};">
+                                    <source
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                        srcset="
+                                            {{ image.getUrl({ format: 'webp', width: 480 }) }} 480w,
+                                            {{ image.getUrl({ format: 'webp', width: 592 }) }} 592w,
+                                            {{ image.getUrl({ format: 'webp', width: 768 }) }} 768w,
+                                            {{ image.getUrl({ format: 'webp', width: 1024 }) }} 1024w,
+                                            {{ image.getUrl({ format: 'webp', width: 1184 }) }} 1184w,
+                                            {{ image.getUrl({ format: 'webp', width: 1536 }) }} 1536w,
+                                            {{ image.getUrl({ format: 'webp', width: 2048 }) }} 2048w
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        alt="{{ image.alt }}"
+                                        class="textMedia__image"
+                                        decoding="async"
+                                        loading="lazy"
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                        src="{{ image.getUrl({ width: 768 }) }}"
+                                        srcset="
+                                            {{ image.getUrl({ width: 480 }) }} 480w,
+                                            {{ image.getUrl({ width: 592 }) }} 592w,
+                                            {{ image.getUrl({ width: 768 }) }} 768w,
+                                            {{ image.getUrl({ width: 1024 }) }} 1024w,
+                                            {{ image.getUrl({ width: 1184 }) }} 1184w,
+                                            {{ image.getUrl({ width: 1536 }) }} 1536w,
+                                            {{ image.getUrl({ width: 2048 }) }} 2048w
+                                        "
+                                    >
+                                </picture>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

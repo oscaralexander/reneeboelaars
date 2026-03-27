@@ -1,0 +1,51 @@
+@use '@css/2-tools/mixins' as *;
+
+.legal {
+    &__header {
+        padding: 5em 0;
+    }
+
+    &__logo {
+        height: 40px;
+        // margin: 0 auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    &__heading {
+        font-size: 2.5em;
+        
+    }
+
+    &__footer {
+        color: var(--color-text-light);
+        font-size: var(--font-size-xs);
+        line-height: var(--line-height-l);
+        padding: 5rem 0;
+    }
+
+    &__footerLinks {
+        display: flex;
+        gap: .33em;
+        flex-wrap: wrap;
+
+        a:not(:last-child)::after {
+            content: '·';
+            display: inline-block;
+            margin-left: .33em;
+            opacity: .5;
+        }
+    }
+
+    @include screen-min(l) {
+        &__footer {
+            display: flex;
+            font-size: var(--font-size-s);
+            justify-content: space-between;
+        }
+    }
+}

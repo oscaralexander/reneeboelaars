@@ -1,0 +1,47 @@
+fieldLayouts:
+  b3e51af4-82c9-4b26-a369-0696cfb760e1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-23T07:09:28+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0483a197-c381-43d6-8e7d-f74489632241 # Use parallax effect on images?
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 894f8f28-c12f-44b3-8135-12a4403da953
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T09:40:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2bf50963-c9d8-432d-918d-8db76ff99f2d # Code
+            handle: htmlHead
+            includeInCards: false
+            instructions: 'HTML code to be placed inside the <head> tag.'
+            label: 'HTML <head>'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9ccd2b4-c28b-4820-a59d-166cd26601f4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: b35b2439-ce2c-4bf5-b4ee-e4cdec7a88bc
+        userCondition: null
+handle: settings
+name: Settings
+sortOrder: 3

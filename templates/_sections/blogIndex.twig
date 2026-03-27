@@ -1,0 +1,100 @@
+{% set blogs = section.blogs.all() %}
+
+{% if blogs is empty %}
+    {% paginate craft.entries().section('blogs').limit(3) as pageInfo, blogs %}
+{% endif %}
+
+<section class="section blogIndex {% if section.isFullWidth %}u-theme-{{ section.theme ?? '0' }}{% endif %}">
+    <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme ?? '0' }}{% endif %}">
+        <div class="grid grid--gap-xxl">
+            {% if section.eyebrow is not empty or section.title is not empty or section.intro is not empty %}
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">
+                    {% include '_partials/sectionHeader' with { section: section } %}
+                </div>
+            {% endif %}
+            <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-8{% endif %}">
+                <div class="stack stack--gap-xxl">
+                    <div class="grid s:grid--gap-xl">
+                        {% if section.sectionHeaderAlignment == 'left' %}
+                            {% set gridClassName = "m:grid__col--span-6" %}
+                        {% else %}
+                            {% switch blogs|length %}
+                                {% case 2 %}
+                                    {% set gridClassName = "m:grid__col--span-6" %}
+                                {% case 3 %}
+                                    {% set gridClassName = "m:grid__col--span-4" %}
+                                {% default %}
+                                    {% set gridClassName = "m:grid__col--span-3" %}
+                            {% endswitch %}
+                        {% endif %}
+                        {% for blog in blogs %}
+                            <div class="grid__col s:grid__col--span-6 {{ gridClassName }}">
+                                <article class="blogItem">
+                                    <div class="blogItem__content">
+                                        {% set image = blog.blogImage.one() %}
+                                        {% if image %}
+                                            <picture class="blogItem__picture">
+                                                <source
+                                                    sizes="(max-width: 768px) 20vw, 33vw"
+                                                    srcset="
+                                                        {{ image.getUrl({ format: 'webp', height: 270, width: 480 }) }} 480w,
+                                                        {{ image.getUrl({ format: 'webp', height: 333, width: 592 }) }} 592w,
+                                                        {{ image.getUrl({ format: 'webp', height: 432, width: 768 }) }} 768w,
+                                                        {{ image.getUrl({ format: 'webp', height: 576, width: 1024 }) }} 1024w,
+                                                        {{ image.getUrl({ format: 'webp', height: 666, width: 1184 }) }} 1184w,
+                                                        {{ image.getUrl({ format: 'webp', height: 864, width: 1536 }) }} 1536w,
+                                                        {{ image.getUrl({ format: 'webp', height: 1152, width: 2048 }) }} 2048w
+                                                    "
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    alt="{{ image.title }}"
+                                                    class="blogItem__image"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    src="{{ image.getUrl({ width: 768 }) }}"
+                                                    srcset="
+                                                        {{ image.getUrl({ height: 270, width: 480 }) }} 480w,
+                                                        {{ image.getUrl({ height: 333, width: 592 }) }} 592w,
+                                                        {{ image.getUrl({ height: 432, width: 768 }) }} 768w,
+                                                        {{ image.getUrl({ height: 576, width: 1024 }) }} 1024w,
+                                                        {{ image.getUrl({ height: 666, width: 1184 }) }} 1184w,
+                                                        {{ image.getUrl({ height: 864, width: 1536 }) }} 1536w,
+                                                        {{ image.getUrl({ height: 1152, width: 2048 }) }} 2048w
+                                                    "
+                                                >
+                                            </picture>
+                                        {% endif %}
+                                        <div class="stack stack--gap-s">
+                                            <h4 class="blogItem__title"><a href="{{ blog.url }}">{{ blog.title }}</a></h4>
+                                            <time class="blogItem__date" datetime="{{ blog.postDate|date('Y-m-d') }}">{{ blog.postDate|date('j F Y') }}</time>
+                                        </div>
+                                    </div>
+                                    <a class="blogItem__link" href="{{ blog.url }}">{{ blog.title }}</a>
+                                </article>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <nav class="pagination">
+                        {% if pageInfo.prevUrl %}
+                            <a class="pagination__link btn" href="{{ pageInfo.prevUrl }}" rel="prev">
+                                <i data-lucide="arrow-left"></i>
+                                Vorige
+                            </a>
+                        {% else %}
+                            <div></div>
+                        {% endif %}
+                        {% if pageInfo.nextUrl %}
+                            <a class="pagination__link btn" href="{{ pageInfo.nextUrl }}" rel="next">
+                                Volgende
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        {% else %}
+                            <div></div>
+                        {% endif %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

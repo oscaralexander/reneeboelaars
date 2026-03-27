@@ -1,0 +1,51 @@
+@use '@css/2-tools/mixins' as *;
+
+.section {
+    position: relative;
+
+    &:first-child {
+        padding-top: calc(var(--nav-height) + var(--nav-offset-y)) !important;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-xxl);
+        padding-bottom: var(--section-padding-y);
+        padding-top: var(--section-padding-y);
+        position: relative;
+        z-index: 5;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-m);
+    }
+
+    &__intro {
+        font-size: var(--font-size-l);
+    }
+
+    &:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0)+.section:not(:has(.textMedia__pictureLarge)):has(.section__inner.u-theme-0) {
+        margin-top: calc(var(--section-padding-y) * -.5);
+    }
+
+    @include screen-max(l) {
+        overflow: hidden;
+    }
+
+    @include screen-min(l) {
+        &__inner {
+            border-radius: var(--border-radius-l);
+        }
+
+        &__header {
+            &--top {
+                margin: auto;
+                max-width: 75%;
+                text-align: center;
+            }
+        }
+    }
+}

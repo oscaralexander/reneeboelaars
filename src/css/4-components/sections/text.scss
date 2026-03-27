@@ -1,0 +1,9 @@
+.text {
+    &:not(.text--horizontal) {
+        .text__header,
+        .text__content {
+            align-self: center;
+            max-width: 44rem;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+
+    &__value {
+        font-family: var(--font-2);
+        font-size: var(--font-size-xxl);
+        letter-spacing: -.025em;
+    }
+}

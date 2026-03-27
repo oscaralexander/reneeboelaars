@@ -1,0 +1,11 @@
+{% if entry is not defined %}
+    {% set entry = craft.entries.section('pages').slug('home').one() %}
+{% endif %}
+
+{% extends "_layout" %}
+
+{% block content %}
+    {% for section in entry.sections.all() %}
+        {% include "_sections/" ~ section.type with { section: section } %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,132 @@
+columnSuffix: null
+handle: ctas
+instructions: null
+name: CTAs
+searchable: false
+settings:
+  addRowLabel: 'Add a row'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Label
+            -
+              - handle
+              - label
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - URL
+            -
+              - handle
+              - url
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - Icon
+            -
+              - handle
+              - icon
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col4
+        -
+          __assoc__:
+            -
+              - heading
+              - Type
+            -
+              - handle
+              - type
+            -
+              - width
+              - ''
+            -
+              - type
+              - select
+            -
+              - options
+              -
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - 'Button (Primary)'
+                    -
+                      - value
+                      - buttonPrimary
+                    -
+                      - default
+                      - true
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Button
+                    -
+                      - value
+                      - button
+                    -
+                      - default
+                      - false
+                -
+                  __assoc__:
+                    -
+                      - label
+                      - Text
+                    -
+                      - value
+                      - text
+                    -
+                      - default
+                      - false
+      -
+        - col5
+        -
+          __assoc__:
+            -
+              - heading
+              - 'New tab?'
+            -
+              - handle
+              - newTab
+            -
+              - width
+              - ''
+            -
+              - type
+              - lightswitch
+  defaults: null
+  maxRows: null
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

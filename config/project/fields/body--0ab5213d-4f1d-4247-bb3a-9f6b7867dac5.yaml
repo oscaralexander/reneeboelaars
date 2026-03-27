@@ -1,0 +1,53 @@
+columnSuffix: null
+handle: body
+instructions: null
+name: Body
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - fb7a6770-6dc8-42b5-a923-e8c086be5116 # Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 08a3ce3c-9485-46ce-9b4f-9ad497552e2c # Video
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 2a62b03c-2bc3-46af-8b72-3b6c66529e58 # Image(s)
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 1d38ad8b-8f95-4f1f-9495-5f20339f6f9d # Items
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

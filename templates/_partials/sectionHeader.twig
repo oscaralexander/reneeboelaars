@@ -1,0 +1,16 @@
+{% set sticky = sticky ?? false %}
+{% if section.eyebrow is not empty or section.title is not empty or section.intro is not empty %}
+    <header class="section__header section__header--{{ section.sectionHeaderAlignment ?? headerAlignment ?? 'left' }}">
+        {% if section.eyebrow is not empty %}
+            <h5 class="section__eyebrow">{{ section.eyebrow }}</h5>
+        {% endif %}
+        {% if section.title is not empty %}
+            <h2 class="section__title textSplit js-textSplit">{{ section.title }}</h2>
+        {% endif %}
+        {% if section.intro is not empty %}
+            <div class="section__intro richText">
+                {{ section.intro }}
+            </div>
+        {% endif %}
+    </header>
+{% endif %}

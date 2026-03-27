@@ -1,0 +1,126 @@
+@use '@css/2-tools/mixins' as *;
+
+.textMedia {
+    &__pictureLarge {
+        display: none;
+    }
+
+    &__mediaCol {
+        display: none;
+    }
+
+    &__picture {
+        border-radius: var(--media-border-radius-m);
+        display: block;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__image {
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+
+        .textMedia__picture--parallax &,
+        .textMedia__pictureLarge--parallax & {
+            height: 125%;
+            transform: translate3d(0, calc(var(--equinox-pos) * 20%), 0);
+        }
+    }
+
+    &__video {
+        &--16\:9 {
+            aspect-ratio: 16 / 9;
+            position: relative;
+            width: 100%;
+
+            iframe {
+                position: absolute;
+                border-radius: .5rem;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .ctas {
+        margin-top: var(--size-m);
+    }
+
+    @include screen-min(m) {
+        &__textCol {
+            .textMedia__media {
+                display: none;
+            }
+        }
+
+        &__picture {
+            max-height: 66.66666vh;
+        }
+
+        &__body {
+            p {
+                &.large {
+                    font-size: var(--font-size-l);
+                }
+            }
+        }
+    }
+
+    @include screen-min(l) {
+        &__mediaCol {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__pictureLarge {
+            display: block;
+            position: absolute;
+            overflow: hidden;
+
+            .textMedia--left & {
+                inset: 0 0 0 50%;
+            }
+
+            .textMedia--right & {
+                inset: 0 50% 0 0;
+            }
+        }
+
+        &__picture {
+            border-radius: var(--media-border-radius-l);
+        }
+
+        &:has(.textMedia__pictureLarge) {
+            .textMedia__picture {
+                display: none;
+            }
+        }
+
+        &.textMedia--left:has(.textMedia__pictureLarge) {
+            .textMedia__textCol {
+                padding-right: var(--size-xxl);
+            }
+        }
+
+        &.textMedia--right:has(.textMedia__pictureLarge) {
+            .textMedia__textCol {
+                padding-left: var(--size-xxl);
+            }
+        }
+
+        &.textMedia--stickyMedia {
+            .textMedia__mediaCol {
+                position: relative;
+
+                .textMedia__media {
+                    position: sticky;
+                    top: calc(var(--nav-height) + (var(--nav-offset-y) * 2));
+                }
+            }
+        }
+    }
+}

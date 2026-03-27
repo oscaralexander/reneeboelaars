@@ -1,0 +1,5 @@
+.companies {
+    &__ticker {
+        mask-image: linear-gradient(to right, transparent, #000 calc(var(--gutter) * 2), #000 calc(100% - var(--gutter) * 2), transparent);
+    }
+}

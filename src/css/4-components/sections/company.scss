@@ -1,0 +1,17 @@
+@use '@css/2-tools/mixins' as *;
+
+.company {
+    padding: 0 1.5rem;
+
+    &__logo {
+        height: 4rem !important;
+    }
+
+    @include screen-min(l) {
+        padding: 0 2rem;
+
+        &__logo {
+            height: 5rem !important;
+        }
+    }
+}

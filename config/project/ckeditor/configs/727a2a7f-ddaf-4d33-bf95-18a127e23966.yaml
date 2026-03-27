@@ -1,0 +1,15 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+js: "return {\r\n  heading: {\r\n    options: [\r\n      {\r\n        model: 'heading2',\r\n        view: 'h2',\r\n        title: 'Heading 2',\r\n        class: 'ck-heading_heading2',\r\n      },\r\n      {\r\n        model: 'heading3',\r\n        view: 'h3',\r\n        title: 'Heading 3',\r\n        class: 'ck-heading_heading3',\r\n      },\r\n      {\r\n        model: 'heading4',\r\n        view: 'h4',\r\n        title: 'Heading 4',\r\n        class: 'ck-heading_heading4',\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        model: 'paragraph',\r\n        title: 'Paragraph',\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphLarge',\r\n        title: 'Paragraph (Large)',\r\n        view: {\r\n          classes: ['large'],\r\n          name: 'p',\r\n        },\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphSmall',\r\n        title: 'Paragraph (Small)',\r\n        view: {\r\n          classes: ['small'],\r\n          name: 'p',\r\n        },\r\n      },\r\n    ],\r\n  },\r\n};"
+name: Blog
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

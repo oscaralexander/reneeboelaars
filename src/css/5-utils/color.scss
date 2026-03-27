@@ -1,0 +1,15 @@
+.u-color {
+    &-text {
+        &-accent {
+            color: var(--color-text-accent);
+        }
+
+        &-hc {
+            color: var(--color-text-hc);
+        }
+
+        &-lc {
+            color: var(--color-text-lc);
+        }
+    }
+}

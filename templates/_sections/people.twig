@@ -1,0 +1,70 @@
+{% set people = section.people.all() %}
+
+{% if people is empty %}
+    {% set people = craft.entries.section('people').all() %}
+{% endif %}
+
+{% if people %}
+    <section class="section people {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %} js-equinox">
+        <div class="wrapper section__inner u-theme-{{ section.theme ?? 0 }}">
+            <div class="grid grid--gap-xxl">
+                {% if section.eyebrow or section.title or section.intro %}
+                    <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">
+                        {% include '_partials/sectionHeader' with { section: section } %}
+                    </div>
+                {% endif %}
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-8{% endif %}">
+                    <div class="grid grid--scrolling grid--gap-l">
+                        {% switch people|length %}
+                            {% case 2 %}
+                                {% set gridClassName = 'l:grid__col--span-6' %}
+                            {% case 4 %}
+                                {% set gridClassName = 'l:grid__col--span-3' %}
+                            {% case 5 %}
+                                {% set gridClassName = 'l:grid__col--flex' %}
+                            {% default %}
+                                {% set gridClassName = 'l:grid__col--span-4' %}
+                        {% endswitch %}
+                        {% set gridClassName = people|length > 5 ? 'l:grid__col--3' : gridClassName %}
+                        {% for person in people %}
+                            <div class="grid__col {{ gridClassName }}">
+                                <article class="person">
+                                    {% set photo = person.photo.one() %}
+                                    {% if photo %}
+                                        {% if person.linkToPage is not empty %}
+                                            <a href="{{ person.linkToPage.one().url }}">
+                                        {% endif %}
+                                        <img
+                                            alt="{{ photo.alt }}"
+                                            class="person__photo"
+                                            decoding="async"
+                                            loading="lazy"
+                                            src="{{ photo.getUrl({ height: 320, width: 320, format: 'webp' }) }}"
+                                        >
+                                        {% if person.linkToPage is not empty %}
+                                            </a>
+                                        {% endif %}
+                                    {% endif %}
+                                    <div class="person__text">
+                                        {% if person.linkToPage is not empty %}
+                                            <a class="person__name" href="{{ person.linkToPage.one().url }}">{{ person.title }}</a>
+                                        {% else %}
+                                            <div class="person__name">{{ person.title }}</div>
+                                        {% endif %}
+                                        <div class="person__role">
+                                            {% set positionCompany = [person.position, person.company]|filter|join(', ') %}
+                                            {% if positionCompany %}{{ positionCompany }}{% endif %}
+                                        </div>
+                                        {% if person.location %}
+                                            <div class="person__location">{{ person.location }}</div>
+                                        {% endif %}
+                                    </div>
+                                </article>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

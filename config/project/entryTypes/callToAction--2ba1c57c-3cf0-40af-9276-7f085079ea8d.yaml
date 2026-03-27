@@ -1,0 +1,110 @@
+color: null
+description: null
+fieldLayouts:
+  1a43aab0-b0f2-4ce9-8b15-2c3493d02b65:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-08T11:09:45+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 423d82f7-7bac-4c40-9f6c-5fa5a4a6fedb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-08T11:14:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15120716-3710-4261-88f8-6abee22e3b6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-13T11:31:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 667a2505-10be-4de8-9394-08a487372606
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: acd7c6dc-1eea-4469-b969-327b7cd1ff0f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-13T11:34:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14913363-a919-43c8-8d6f-2b849650e3ea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Styling
+        uid: 407ec9c0-313c-4c2e-9680-b877afd0862d
+        userCondition: null
+handle: callToAction
+hasTitleField: true
+icon: null
+name: 'Call to Action'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

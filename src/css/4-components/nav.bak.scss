@@ -1,0 +1,207 @@
+@use '@css/2-tools/mixins' as *;
+
+.nav {
+    padding: var(--nav-offset-y) var(--nav-offset-x) 0 var(--nav-offset-x);
+    position: fixed;
+    top: 0;
+    transition: var(--duration-l);
+    z-index: 100;
+    width: 100%;
+
+    &__logo {
+        height: var(--logo-height);
+    }
+
+    &__content {
+        align-items: center;
+        display: flex;
+        gap: 1em;
+    }
+
+    &__inner {
+        background: var(--nav-color-bg, var(--color-bg));
+        box-shadow: var(--nav-box-shadow);
+        border-radius: var(--nav-border-radius);
+        height: var(--nav-height);
+        margin: 0 auto;
+        max-width: calc(var(--wrapper-width) - var(--nav-offset-x) * 2);
+        overflow: hidden;
+        transition: var(--duration-m);
+    }
+
+    &__top {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        height: var(--nav-height);
+        padding: 0 calc(var(--gutter) - var(--nav-offset-x));
+        position: relative;
+    }
+
+    &.is-scrolled {
+        transform: translate3d(0, -100%, 0);
+
+        .nav__inner {
+            box-shadow: none;
+        }
+    }
+
+    @include screen-max(m) {
+        &__top {
+            justify-content: center;
+            padding: 0 calc(var(--gutter) - var(--nav-offset-x));
+        }
+
+        &__menuOverlay {
+            background: rgba(0, 0, 0, .20);
+            inset: 0;
+            opacity: 0;
+            pointer-events: auto;
+            position: fixed;
+            transition: opacity .5s ease,
+                visibility 0s .5s linear;
+            visibility: hidden;
+            z-index: 2;
+        }
+
+        &__menu {
+            background: var(--color-bg);
+            display: flex;
+            flex-direction: column;
+            height: 100svh;
+            padding-top: var(--nav-offset-y);
+            position: fixed;
+            transform: translate3d(100%, 0, 0);
+            transition: box-shadow var(--duration-l) ease-in,
+                transform .5s cubic-bezier(.75, 0, 0.175, 1);
+            right: 0;
+            top: 0;
+            width: 80vw;
+            z-index: 3;
+        }
+
+        &__menuHeader {
+            align-items: center;
+            color: var(--color-text-lc);
+            display: flex;
+            font-size: var(--font-size-l);
+            font-weight: 500;
+            height: var(--nav-height);
+            padding-left: var(--gutter);
+        }
+
+        &__menuFooter {
+            border-top: 1px solid var(--color-border);
+            padding: var(--gutter);
+
+            .ctas {
+                display: flex;
+
+                .btn {
+                    flex: 1;
+                    width: 100%;
+                }
+            }
+        }
+
+        &__menuToggle {
+            background: transparent;
+            border-radius: var(--border-radius-m);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 var(--btn-height);
+            height: var(--btn-height);
+            right: var(--nav-offset-x);
+            width: var(--btn-height);
+            position: absolute;
+            z-index: 4;
+    
+            div {
+                background: var(--color-text);
+                height: 2px;
+                position: relative;
+                transition: 0ms 125ms ease;
+                width: 20px;
+    
+                &::before,
+                &::after {
+                    background: var(--color-text);
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    transition: top 125ms 125ms ease,
+                        transform 125ms ease;
+                    width: 20px;
+                }
+    
+                &::before {
+                    top: -6px;
+                }
+    
+                &::after {
+                    top: 6px;
+                }
+            }
+        }
+
+        .nav__inner:has(.nav__menuToggle[aria-expanded='true']) {
+            .nav__menuOverlay {
+                opacity: 1;
+                pointer-events: auto;
+                transition: opacity .5s cubic-bezier(.75, 0, 0.175, 1),
+                    visibility 0s linear;
+                visibility: visible;
+            }
+
+            .nav__menuToggle div {
+                background: transparent;
+
+                &::before,
+                &::after {
+                    transition: top 125ms ease,
+                        transform 125ms 125ms ease;
+                }
+
+                &::before {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .nav__menu {
+                box-shadow: 0 0 var(--nav-height) rgba(0, 0, 0, .15);
+                transform: translate3d(0, 0, 0);
+                transition: box-shadow var(--duration-l) ease-out,
+                    transform .5s cubic-bezier(.75, 0, 0.175, 1);
+            }
+        }
+
+        &__cta {
+            display: none;
+        }
+    }
+
+    @include screen-min(l) {
+        &__inner {
+            overflow: visible;
+        }
+
+        &__menu {
+            display: block;
+        }
+
+        &__menuHeader,
+        &__menuFooter,
+        &__menuOverlay,
+        &__menuToggle {
+            display: none;
+        }
+    }
+}

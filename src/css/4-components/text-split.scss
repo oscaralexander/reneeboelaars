@@ -1,0 +1,40 @@
+@keyframes textSplitChunk {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.textSplit {
+    --duration: 1s;
+
+    .word {
+        --word-index: 0;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: bottom;
+        white-space: nowrap;
+
+        span {
+            display: inline-block;
+            will-change: opacity, transform;
+        }
+
+        &::after {
+            content: ' ';
+            white-space: pre;
+        }
+    }
+
+    &.is-textSplitVisible {
+        .word > span {
+            animation: textSplitChunk var(--duration) cubic-bezier(0.5, 0, 0.25, 1) both;
+            animation-delay: calc(250ms * (var(--word-index) / var(--num-words)));
+        }
+    }
+}

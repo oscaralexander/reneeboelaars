@@ -1,0 +1,62 @@
+columnSuffix: null
+handle: theme
+instructions: null
+name: 'Theme color'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Wit
+        -
+          - value
+          - '0'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#ffffff'
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Tint
+        -
+          - value
+          - '1'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#ecf6f7'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Donker
+        -
+          - value
+          - inverted
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#1c4c60'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

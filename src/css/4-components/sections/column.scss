@@ -1,0 +1,65 @@
+@use '@css/2-tools/mixins' as *;
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-m);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-m);
+
+        &--icon {
+            flex-direction: row;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 3.5rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        position: relative;
+
+        &::before {
+            background: currentColor;
+            border-radius: 50%;
+            content: '';
+            inset: 0;
+            opacity: .15;
+            position: absolute;
+        }
+
+        .lucide {
+            height: 1.75rem;
+            stroke-width: 1.5;
+            width: 1.75rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-s);
+    }
+
+    .column__inner--icon ~ .ctas {
+        padding-left: calc(4rem + var(--size-m));
+    }
+
+    @include screen-min(l) {
+        .column__icon {
+            flex: 0 0 4rem;
+            height: 4rem;
+            width: 4rem;
+
+            .lucide {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+}

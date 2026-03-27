@@ -1,0 +1,13 @@
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-1);
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing);
+    line-height: var(--line-height-m);
+    position: relative;
+
+    &:has(.nav__menuToggle[aria-expanded='true']) {
+        overflow: hidden;
+    }
+}

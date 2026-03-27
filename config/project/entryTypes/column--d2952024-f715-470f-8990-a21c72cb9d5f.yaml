@@ -1,0 +1,171 @@
+color: null
+description: null
+fieldLayouts:
+  10f8f255-e153-46d4-b35a-d6b5e45a5353:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:31a76852-15fe-4180-9594-6a230f0a85c4'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-14T12:19:54+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\TextFieldConditionRule
+                  fieldUid: 9e7ef0ca-bdf6-434e-9bcd-15b5f508d201 # Icon
+                  layoutElementUid: 864d9c92-5b5d-4b0a-8c41-179870f2b06d
+                  operator: empty
+                  uid: 18d3117f-4464-40c8-8a26-9e06a99b4db2
+                  value: ''
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 228e5a17-b12a-484d-965e-e78a2851c86f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-14T12:19:54+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
+                  layoutElementUid: 228e5a17-b12a-484d-965e-e78a2851c86f
+                  operator: empty
+                  uid: f0612dbb-13c6-49c1-83aa-8c6aae176e76
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 9e7ef0ca-bdf6-434e-9bcd-15b5f508d201 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 864d9c92-5b5d-4b0a-8c41-179870f2b06d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-14T12:36:20+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
+                  layoutElementUid: 228e5a17-b12a-484d-965e-e78a2851c86f
+                  operator: empty
+                  uid: 6201dea0-78aa-48fb-bb5e-84b17b15dfb5
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: c716490a-fb42-4ca1-9579-64274cca2df6 # Color
+            handle: iconColor
+            includeInCards: false
+            instructions: null
+            label: 'Icon color'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c1e718c-951a-4972-b8b3-602962ae04e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-07-14T12:17:44+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Heading
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 798fd7d2-0857-4e17-93d6-6f6fad312562
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-14T12:19:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
+            handle: text
+            includeInCards: true
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31a76852-15fe-4180-9594-6a230f0a85c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-14T12:19:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9adc3a84-205a-4689-adea-99b2a4c19b5c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ad36e9fa-825a-477c-a955-e4bf292f4e76
+        userCondition: null
+handle: column
+hasTitleField: true
+icon: null
+name: Column
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

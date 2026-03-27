@@ -1,0 +1,28 @@
+{% set companies = craft.entries.section('companies').all() %}
+
+{% if companies is not empty %}
+    <section class="section companies {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
+        <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
+            {% include '_partials/sectionHeader' with { section: section, headerAlignment: 'top' } %}
+            <div class="wrapper__outset companies__ticker">
+                <div class="ticker js-ticker">
+                    <div class="ticker__inner js-tickerInner">
+                        {% for company in companies %}
+                            {% set logo = company.logo.one() %}
+                            {% if logo %}
+                                <div class="ticker__item company">
+                                    <img
+                                        alt="{{ logo.alt }}"
+                                        class="company__logo"
+                                        loading="lazy"
+                                        src="{{ logo.url }}"
+                                    >
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

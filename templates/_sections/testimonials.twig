@@ -1,0 +1,79 @@
+{% set testimonials = section.testimonials.all() %}
+{% set truncateWords = 100 %}
+{% if testimonials is empty %}
+    {% set testimonials = craft.entries.section('testimonials').all() %}
+{% endif %}
+
+{% if testimonials %}
+    <section class="section testimonials {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %}">
+        <div class="wrapper section__inner {% if section.theme %}u-theme-{{ section.theme }}{% endif %}">
+            {% include '_partials/sectionHeader' with { section: section } %}
+            <div class="grid grid--gap-l">
+                {% if testimonials|length > 1 %}
+                    {% set gridClassName = "l:grid__col--span-6" %}
+                {% endif %}
+                {% for testimonial in testimonials %}
+                    <div class="grid__col l:grid__col--span-6">
+                        <article class="testimonialAlt js-equinox">
+                            {% set image = testimonial.authorImage.one() %}
+                            {% if image %}
+                                <div class="testimonialAlt__image">
+                                    <img
+                                        alt="{{ testimonial.title }}"
+                                        class=""
+                                        decoding="async"
+                                        loading="lazy"
+                                        src="{{ image.getUrl({ height: 750, width: 600, format: 'webp' }) }}"
+                                    >
+                                </div> 
+                            {% endif %}
+                            {% if testimonial.pullQuote is not empty %}
+                                <p class="testimonialAlt__pullQuote">
+                                    “{{ testimonial.pullQuote }}”
+                                </p>
+                            {% endif %}
+                            <div class="testimonialAlt__author">
+                                <div class="testimonialAlt__author-name">
+                                    {{ testimonial.title }}
+                                </div>
+                                <div class="testimonialAlt__author-company">
+                                    {% if testimonial.authorCompany is not empty %}
+                                        {% if testimonial.authorPosition is not empty %}
+                                            {{ testimonial.authorPosition }},
+                                        {% endif %}
+                                        {{ testimonial.authorCompany }}
+                                    {% else %}
+                                        {% if testimonial.authorPosition is not empty %}
+                                            {{ testimonial.authorPosition }}
+                                        {% endif %}
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="testimonialAlt__text richText">
+                                {% set showMoreId = 'testimonialMore' ~ testimonial.id %}
+                                {% set truncated = testimonial.body|striptags|split(' ')|slice(0, truncateWords)|join(' ') %}
+                                {% set wordCount = testimonial.body|striptags|split(' ')|length %}
+                                <div class="testimonialAlt__body">
+                                    <span id="{{ showMoreId }}-truncated">
+                                        {{ truncated }}{% if wordCount > 100 %}&hellip;{% endif %}
+                                        {% if wordCount > truncateWords %}
+                                            <a class="testimonialAlt__moreLink" href="javascript:void(0);" onclick="
+                                                document.getElementById('{{ showMoreId }}-truncated').style.display='none';
+                                                document.getElementById('{{ showMoreId }}-full').style.display='block';
+                                            ">Lees meer</a>
+                                        {% endif %}
+                                    </span>
+                                    {% if wordCount > truncateWords %}
+                                        <span id="{{ showMoreId }}-full" style="display: none;">
+                                            {{ testimonial.body|raw }}
+                                        </span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}

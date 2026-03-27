@@ -1,0 +1,6 @@
+.media {
+    &__image {
+        box-shadow: 0 1em 4em oklch(var(--color-dark-gray-lch) / 15%);
+        border-radius: .5rem;
+    }
+}

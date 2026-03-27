@@ -1,0 +1,38 @@
+{% set stats = section.stats.all() %}
+
+{% if stats %}
+    <section class="section columns {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %}">
+        <div class="wrapper section__inner {% if section.theme %}u-theme-{{ section.theme ?? '0' }}{% endif %}">
+            <div class="grid grid--gap-xxl">
+                {% if section.eyebrow or section.title or section.intro %}
+                    <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">
+                        {% include '_partials/sectionHeader' with { section: section } %}
+                    </div>
+                {% endif %}
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-8{% endif %}">
+                    <div class="grid grid--gap-xl l:grid--gap-xxl">
+                        {% switch stats|length %}
+                            {% case 1 %}
+                                {% set gridClassName = "l:grid__col--span-6" %}
+                            {% case 4 %}
+                                {% set gridClassName = "l:grid__col--span-3" %}
+                            {% default %}
+                                {% set gridClassName = "l:grid__col--span-4" %}
+                        {% endswitch %}
+                        {% if stats|length > 4 %}
+                            {% set gridClassName = "l:grid__col--flex" %}
+                        {% endif %}
+                        {% for stat in stats %}
+                            <div class="grid__col {{ gridClassName }}">
+                                <div class="stat">
+                                    <div class="stat__value u-text-b u-color-text-hc u-text-num">{{ stat.value }}</div>
+                                    <div class="stat__label richText">{{ stat.label }}</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

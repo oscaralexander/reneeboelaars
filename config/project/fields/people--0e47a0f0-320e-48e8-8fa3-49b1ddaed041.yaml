@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: people
+instructions: 'Leave empty to display ALL people.'
+name: People
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 0
+  selectionLabel: 'Add people'
+  showCardsInGrid: true
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:da4673a2-8ccd-4f0a-a4c3-6fa3da66fc0d' # People
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

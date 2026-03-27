@@ -1,0 +1,25 @@
+.tickerSection {
+    &__ticker {
+        mask-image: linear-gradient(to right, transparent, #000 calc(var(--gutter) * 2), #000 calc(100% - var(--gutter) * 2), transparent);
+    }
+
+    &__item {
+        padding-right: var(--size-m);
+
+        &-image {}
+
+        &-testimonial {
+            flex: 0 0 320px;
+
+            .testimonial__author {
+                gap: .75rem;
+
+                &-image {
+                    flex: 0 0 2.5rem;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+}

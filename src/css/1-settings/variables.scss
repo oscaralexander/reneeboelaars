@@ -1,0 +1,252 @@
+$grid-columns: 12;
+
+$breakpoints: (
+    'xs': 375px,
+    's': 768px,
+    'm': 1024px,
+    'l': 1280px,
+    'xl': 1440px,
+);
+
+$sizes: (
+    'xxs': .125rem,
+    'xs': .25rem,
+    's': .5rem,
+    'm': 1rem,
+    'l': 1.5rem,
+    'xl': 2rem,
+    'xxl': 3rem,
+);
+
+:root {
+    --base-size: 16px;
+
+    --font-1: 'Figtree', system-ui, sans-serif;
+    --font-2: 'Parkinsans', system-ui, sans-serif;
+    --letter-spacing: 0;
+
+    // Font size
+    --font-size-xxs: .625rem;
+    --font-size-xs: .75rem;
+    --font-size-s: .875rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.125rem;
+    --font-size-xl: 1.125rem;
+    --font-size-xxl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+
+    // Line heights
+    --line-height-s: 1.15;
+    --line-height-m: 1.3;
+    --line-height-l: 1.6;
+
+    // Layout sizing
+    --gutter: 1.25em;
+    --wrapper-width: 85rem; // 1360px
+    --wrapper-width-narrow: 44rem;
+
+    // Logo
+    --logo-height: 1.75em;
+
+    // Sections
+    --section-padding-y: 3rem;
+
+    // Media
+    --media-border-radius-s: .25rem;
+    --media-border-radius-m: .5rem;
+    --media-border-radius-l: 1rem;
+
+    // Colors
+    --color-bg: #FFF;
+    --color-bg-tint: rgb(236, 246, 247);
+
+    --color-text: rgb(28, 76, 96); // #1c4c60
+    --color-text-accent: rgba(15, 19, 31, 1);
+    --color-text-hc: rgb(28, 76, 96);
+    --color-text-lc: rgba(60, 121, 143);
+
+    --color-link: rgb(60, 121, 143);
+    --color-link-hover: rgb(28, 76, 96);
+
+    --color-border: rgba(28, 76, 96, .15);
+    --color-border-hc: rgba(28, 76, 96, .3);
+    --color-border-lc: rgba(28, 76, 96, .1);
+
+    --color-danger: #DD3300;
+    --color-success: #009900;
+
+    // Footer
+    --footer-color-bg: rgb(28, 76, 96);
+    --footer-color-border: rgb(60, 121, 143);
+    --footer-color-link: rgb(175, 198, 208);
+    --footer-color-link-hover: rgb(255, 255, 255);
+    --footer-color-text: rgb(175, 198, 208);
+    --footer-color-text-hc: #FFF;
+    --footer-color-text-lc: rgba(175, 198, 208, .66);
+
+    --footer-legal-color-bg: #000;
+    --footer-legal-color-text: rgb(175, 198, 208);
+
+    --footer-logo-width: 10rem;
+
+    // Border radii
+    --border-radius-s: .25em;
+    --border-radius-m: .5em;
+    --border-radius-l: 1em;
+
+    // Box shadows
+    --box-shadow-m: 0 .5em .5em rgba(0, 0, 0, .05);
+
+    // H1
+    --h1-color: var(--color-text-hc);
+    --h1-font: var(--font-2);
+    --h1-letter-spacing: 0;
+    --h1-line-height: 1.25;
+    --h1-size: var(--font-size-4xl);
+    --h1-style: normal;
+    --h1-text-transform: none;
+    --h1-weight: 700;
+
+    // H2
+    --h2-color: var(--color-text-hc);
+    --h2-font: var(--font-2);
+    --h2-letter-spacing: 0;
+    --h2-line-height: var(--line-height-m);
+    --h2-size: var(--font-size-3xl);
+    --h2-style: normal;
+    --h2-text-transform: none;
+    --h2-weight: 700;
+
+    // H3
+    --h3-color: var(--color-text-hc);
+    --h3-font: var(--font-2);
+    --h3-letter-spacing: 0;
+    --h3-line-height: var(--line-height-m);
+    --h3-size: var(--font-size-xxl);
+    --h3-style: normal;
+    --h3-text-transform: none;
+    --h3-weight: 600;
+
+    // H4
+    --h4-color: var(--color-text-hc);
+    --h4-font: var(--font-1);
+    --h4-letter-spacing: 0;
+    --h4-line-height: var(--line-height-m);
+    --h4-size: var(--font-size-l);
+    --h4-style: normal;
+    --h4-text-transform: none;
+    --h4-weight: 600;
+
+    // H5
+    --h5-color: var(--color-text-hc);
+    --h5-font: var(--font-1);
+    --h5-letter-spacing: .05em;
+    --h5-line-height: var(--line-height-m);
+    --h5-size: var(--font-size-xs);
+    --h5-style: normal;
+    --h5-text-transform: uppercase;
+    --h5-weight: 600;
+
+    // Button
+    --btn-border-radius: 1.75em;
+    --btn-font-weight: 600;
+    --btn-height-s: 2.75em;
+    --btn-height: 3em;
+    --btn-height-l: 3.25em;
+
+    --btn-bg-color: transparent;
+    --btn-bg-color-hover: transparent;
+    --btn-border-color: var(--color-border);
+    --btn-border-color-hover: var(--color-border-hc);
+    --btn-color: var(--color-text-hc);
+    --btn-color-hover: var(--color-text-hc);
+
+    --btn-primary-bg-color: rgb(121, 219, 179);
+    --btn-primary-bg-color-hover: rgb(136, 234, 192);
+    --btn-primary-color: var(--color-text-hc);
+    --btn-primary-color-hover: var(--color-text-hc);
+    --btn-primary-border-color: transparent;
+    --btn-primary-border-color-hover: transparent;
+
+    --btn-inverted-bg-color: transparent;
+    --btn-inverted-bg-color-hover: transparent;
+    --btn-inverted-color: #FFF;
+    --btn-inverted-color-hover: #FFF;
+    --btn-inverted-border-color: rgba(255, 255, 255, .25);
+    --btn-inverted-border-color-hover: rgba(255, 255, 255, .5);
+
+    --btn-primary-inverted-bg-color: #79dbb3;
+    --btn-primary-inverted-bg-color-hover: #88eac0;
+    --btn-primary-inverted-color: var(--color-text-hc);
+    --btn-primary-inverted-color-hover: var(--color-text-hc);
+    --btn-primary-inverted-border-color: transparent;
+    --btn-primary-inverted-border-color-hover: transparent;
+
+    // Input
+    --input-border-radius: .5rem;
+    --input-border-color: var(--color-border);
+    --input-border-color-focus: rgba(28, 76, 96);
+    --input-color: var(--color-text);
+    --input-color-placeholder: var(--color-text-lc);
+    --input-font-size: var(--font-size-m);
+    --input-font-weight: 400;
+    --input-height: 3rem;
+    --input-line-height: 1.25;
+    --input-outline: 3px solid transparent;
+    --input-outline-focus: 3px solid rgb(121, 219, 179, .5);
+
+    --option-bg-color: transparent;
+    --option-bg-color-checked: rgb(28, 76, 96);
+    --option-border-color: var(--color-border);
+    --option-border-color-checked: rgb(28, 76, 96);
+
+    // Navigation
+    --nav-link-font-size: var(--font-size-l);
+    --nav-link-font-weight: 600;
+    --nav-link-color: var(--color-link);
+    --nav-link-color-hover: var(--color-link-hover);
+
+    // Durations
+    --duration-s: 125ms;
+    --duration-m: 250ms;
+    --duration-l: 500ms;
+
+    // Breakpoints
+    @each $key, $value in $breakpoints {
+        --breakpoint-#{$key}: #{$value};
+    }
+
+    // Sizes
+    @each $key, $value in $sizes {
+        --size-#{$key}: #{$value};
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        // Font size
+        --font-size-xxl: 1.75rem;
+        --font-size-3xl: 2.75rem;
+        --font-size-4xl: 4rem;
+
+        // Layout
+        --gutter: 3em;
+
+        // Sections
+        --section-padding-y: 5em;
+
+        // Nav
+        --nav-border-radius: 1rem;
+        --nav-box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .1);
+        --nav-height: 8rem;
+        --nav-offset-x: 1rem;
+        --nav-offset-y: 1rem;
+
+        // Logo
+        --logo-height: 6rem;
+
+        // Footer
+        --footer-logo-width: 8rem;
+    }
+}

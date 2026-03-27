@@ -1,0 +1,72 @@
+{% set products = section.products.all() %}
+
+{% if products is empty %}
+    {% set products = craft.entries.section('products').all() %}
+{% endif %}
+
+{% if products %}
+    <section class="section products {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %}">
+        <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
+            <div class="grid grid--gap-xxl">
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">
+                    {% include '_partials/sectionHeader' with { section: section, sticky: true } %}
+                </div>
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-8{% endif %}">
+                    <div class="grid grid--gap-m grid--scrolling">
+                        {% if section.sectionHeaderAlignment == 'left' %}
+                            {% set gridClassName = "l:grid__col--span-6" %}
+                        {% else %}
+                            {% switch section.products|length %}
+                                {% case 2 %}
+                                    {% set gridClassName = "l:grid__col--span-6" %}
+                                {% case 3 %}
+                                    {% set gridClassName = "l:grid__col--span-4" %}
+                                {% case 4 %}
+                                    {% set gridClassName = "l:grid__col--span-3" %}
+                                {% default %}
+                                    {% set gridClassName = "l:grid__col--span-4" %}
+                            {% endswitch %}
+                        {% endif %}
+                        {% for product in products %}
+                            <div class="grid__col {{ gridClassName }}">
+                                <div class="product">
+                                    <div class="product__content">
+                                        <h3 class="product__title">{{ product.title }}</h3>
+                                        {% if product.price %}
+                                            <div class="product__price">
+                                                {% if product.fromPrice %}
+                                                    <span class="product__price-from">v.a.</span>
+                                                {% endif %}
+                                                <span class="product__price-value">€{{ product.price }}</span>
+                                                {% if product.priceUnit %}
+                                                    <span class="product__price-unit">/ {{ product.priceUnit }}</span>
+                                                {% endif %}
+                                            {% endif %}
+                                        </div>
+                                        {% if product.description %}
+                                            <div class="product__description">
+                                                {{ product.description }}
+                                            </div>
+                                        {% endif %}
+                                        <div class="product__features">
+                                            {% for row in product.features %}
+                                                <div class="product__feature">
+                                                    {{ row.feature }}
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    {% if product.ctas %}
+                                        <footer class="product__footer">
+                                            {% include '_partials/ctas' with { ctas: product.ctas } %}
+                                        </footer>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+{% endif %}

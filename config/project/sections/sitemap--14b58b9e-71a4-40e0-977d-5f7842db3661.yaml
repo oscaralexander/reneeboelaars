@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: caf77d6d-ca93-498f-b7f2-e38a96563691 # Sitemap
+handle: sitemap
+maxAuthors: 1
+name: Sitemap
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars
+    enabledByDefault: true
+    hasUrls: true
+    template: _sitemap.twig
+    uriFormat: sitemap.xml
+type: single

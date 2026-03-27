@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+        align-items: center;
+        display: flex;
+        font-weight: 500;
+        gap: var(--size-s);
+
+        .lucide {
+            transition: var(--duration-m);
+        }
+
+        &[rel="prev"]:hover {
+            .lucide {
+                transform: translateX(-0.25em);
+            }
+        }
+
+        &[rel="next"]:hover {
+            .lucide {
+                transform: translateX(0.25em);
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+cardThumbAlignment: end
+tabs:
+  -
+    elementCondition: null
+    elements:
+      -
+        autocapitalize: true
+        autocomplete: false
+        autocorrect: true
+        class: null
+        dateAdded: '2025-07-15T12:52:16+00:00'
+        disabled: false
+        elementCondition: null
+        id: null
+        includeInCards: false
+        inputType: null
+        instructions: null
+        label: null
+        max: null
+        min: null
+        name: null
+        orientation: null
+        placeholder: null
+        providesThumbs: false
+        readonly: false
+        requirable: false
+        size: null
+        step: null
+        tip: null
+        title: null
+        type: craft\fieldlayoutelements\addresses\LabelField
+        uid: f8657c98-ce8d-4464-a033-cf51219284b8
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        attribute: countryCode
+        dateAdded: '2025-07-15T12:52:16+00:00'
+        elementCondition: null
+        id: null
+        includeInCards: false
+        instructions: null
+        label: null
+        orientation: null
+        providesThumbs: false
+        requirable: false
+        tip: null
+        type: craft\fieldlayoutelements\addresses\CountryCodeField
+        uid: d08a6efd-0afc-4324-92de-68e381fffa72
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        dateAdded: '2025-07-15T12:52:16+00:00'
+        elementCondition: null
+        includeInCards: true
+        instructions: null
+        label: null
+        providesThumbs: false
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\addresses\AddressField
+        uid: f1b74d08-2f1d-4744-973e-166160dfc2ec
+        userCondition: null
+        warning: null
+      -
+        dateAdded: '2025-07-15T12:53:38+00:00'
+        editCondition: null
+        elementCondition: null
+        fieldUid: b8a2fae7-8fc2-4ed9-9510-07d1bcccdacf # Google Maps URL
+        handle: null
+        includeInCards: false
+        instructions: null
+        label: null
+        providesThumbs: false
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 46a5e8ef-aa8c-4974-b89a-641193419a57
+        userCondition: null
+        warning: null
+        width: 100
+    name: Content
+    uid: edb4d39c-2ec0-4979-abe0-ff6a974bf66d
+    userCondition: null

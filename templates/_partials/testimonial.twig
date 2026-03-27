@@ -1,0 +1,25 @@
+<article class="testimonial" itemprop="review" itemscope itemtype="https://schema.org/Review">
+    <div class="testimonial__body richText" itemprop="reviewBody">
+        {{ testimonial.body }}
+    </div>
+    {% if testimonial.title or testimonial.authorCompany or testimonial.authorPosition %}
+        <div class="testimonial__author">
+            {% set image = testimonial.authorImage.one() %}
+            {% if image %}
+                <img
+                    alt="{{ image.alt }}"
+                    class="testimonial__author-image"
+                    decoding="async"
+                    loading="lazy"
+                    src="{{ image.getUrl({ height: 160, width: 160, format: 'webp' }) }}"
+                >
+            {% endif %}
+            <div class="testimonial__author-text">
+                <div class="testimonial__author-name" itemprop="author">{{ testimonial.title }}</div>
+                <div class="testimonial__author-company">
+                    {% if testimonial.authorPosition %}{{ testimonial.authorPosition }}, {% endif %}{{ testimonial.authorCompany }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</article>

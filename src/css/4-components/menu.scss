@@ -1,0 +1,158 @@
+@use '@css/2-tools/mixins' as *;
+
+@keyframes menu-submenu {
+    from {
+        opacity: 0;
+        transform: translate(-50%, calc(var(--size-s) * -1));
+    }
+}
+
+.menu {
+    &__link {
+        align-items: center;
+        color: var(--nav-color-link);
+        display: flex;
+        font-size: var(--nav-link-font-size);
+        font-weight: var(--nav-link-font-weight);
+        justify-content: space-between;
+        transition: var(--duration-s);
+
+        &:hover {
+            color: var(--nav-color-link-hover);
+        }
+    }
+
+    @include screen-max(m) {
+        display: block;
+        flex: 1;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &__item {
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--color-border);
+            }
+
+            &:has(.menu__submenu) {
+                .menu__link {
+                    color: var(--color-text-lc);
+                    font-size: var(--font-size-s);
+                }
+            }
+        }
+
+        &__link {
+            color: var(--nav-color-link);
+            font-size: var(--font-size-l);
+            font-weight: 500;
+            padding: var(--size-m) var(--gutter);
+            position: relative;
+            z-index: 1;
+
+            &:hover {
+                color: var(--nav-color-link-hover);
+            }
+        }
+
+        &__submenu {
+            padding: 0 0 var(--size-m) 0;
+
+            &-link {
+                color: var(--nav-color-link);
+                font-size: var(--font-size-l);
+                font-weight: 500;
+                display: block;
+                padding: var(--size-s) 0 var(--size-s) calc(var(--gutter) * 2);
+
+                &:hover {
+                    color: var(--nav-color-link-hover);
+                }
+            }
+
+            .menu__submenuToggle:checked+& {
+                height: auto;
+                opacity: 1;
+            }
+        }
+    }
+
+    @include screen-min(l) {
+        align-items: center;
+        display: flex;
+        gap: 1em;
+
+        &__item {
+            position: relative;
+
+            .menu__submenu {
+                display: none;
+            }
+
+            &:hover,
+            &:focus-within {
+                .menu__submenu {
+                    display: block;
+                }
+            }
+
+            &:has(.menu__submenu) {
+                .menu__link {
+                    &::after {
+                        background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><polyline points="12 4.5 7 9.5 2 4.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/></svg>');
+                        content: '';
+                        display: block;
+                        height: 14px;
+                        opacity: .5;
+                        width: 14px;
+                    }
+                }
+            }
+        }
+
+        &__link {
+            align-items: center;
+            border-radius: var(--btn-border-radius);
+            color: var(--nav-color-link);
+            display: flex;
+            font-weight: 500;
+            gap: .5em;
+            line-height: var(--btn-height);
+            padding: 0 var(--size-s);
+            transition: var(--duration-s);
+
+            &:hover {
+                color: var(--nav-color-link-hover);
+            }
+        }
+
+        &__submenuToggle {
+            display: none;
+        }
+
+        &__submenu {
+            animation: menu-submenu var(--duration-s) ease-in-out;
+            background: var(--color-bg);
+            box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius-m);
+            left: 50%;
+            padding: var(--size-s) var(--size-xs);
+            position: absolute;
+            transform: translateX(-50%);
+            width: max-content;
+
+            &-link {
+                border-radius: var(--border-radius-s);
+                color: var(--nav-color-link);
+                display: block;
+                padding: var(--size-s) var(--size-m);
+                transition: var(--duration-s);
+                white-space: nowrap;
+
+                &:hover {
+                    background: var(--color-bg-tint);
+                    color: var(--nav-color-link-hover);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.u-theme {
+    @for $i from 0 through 1 {
+        &-#{$i} {
+            --color-text: var(--theme-#{$i}-color-text);
+            --color-text-accent: var(--theme-#{$i}-color);
+            --color-text-hc: var(--theme-#{$i}-color-text-hc);
+            --color-text-lc: var(--theme-#{$i}-color-text-lc);
+            --h1-color: var(--theme-#{$i}-color-text-hc);
+            --h2-color: var(--theme-#{$i}-color-text-hc);
+            --h5-color: var(--theme-#{$i}-color-text-lc);
+            --color-link: var(--theme-#{$i}-color-link);
+            background: var(--theme-#{$i}-color-bg);
+            color: var(--theme-#{$i}-color-text);
+
+            .u-color-text-accent {
+                color: var(--theme-#{$i}-color);
+            }
+
+            .u-color-text-hc {
+                color: var(--theme-#{$i}-color-text-hc);
+            }
+
+            .u-color-text-lc {
+                color: var(--theme-#{$i}-color-text-lc);
+            }
+        }
+    }
+
+    &-inverted {
+        --color-bg-tint: var(--theme-inverted-color-bg);
+        --color-bg-tint: var(--theme-inverted-color-bg-tint);
+        --color-border: var(--theme-inverted-color-border);
+        --color-border-hc: var(--theme-inverted-color-border-hc);
+        --color-border-lc: var(--theme-inverted-color-border-lc);
+        --color-text: var(--theme-inverted-color-text);
+        --color-text-accent: var(--theme-inverted-color);
+        --color-text-hc: var(--theme-inverted-color-text-hc);
+        --color-text-lc: var(--theme-inverted-color-text-lc);
+        --h1-color: var(--theme-inverted-color-text-hc);
+        --h2-color: var(--theme-inverted-color-text-hc);
+        --h5-color: var(--theme-inverted-color-text-lc);
+
+        --btn-bg-color: var(--btn-inverted-bg-color);
+        --btn-bg-color-hover: var(--btn-inverted-bg-color-hover);
+        --btn-color: var(--btn-inverted-color);
+        --btn-color-hover: var(--btn-inverted-color-hover);
+        --btn-border-color: var(--btn-inverted-border-color);
+        --btn-border-color-hover: var(--btn-inverted-border-color-hover);
+
+        --btn-primary-bg-color: var(--btn-primary-inverted-bg-color);
+        --btn-primary-bg-color-hover: var(--btn-primary-inverted-bg-color-hover);
+        --btn-primary-color: var(--btn-primary-inverted-color);
+        --btn-primary-color-hover: var(--btn-primary-inverted-color-hover);
+        --btn-primary-border-color: var(--btn-primary-inverted-border-color);
+        --btn-primary-border-color-hover: var(--btn-primary-inverted-border-color-hover);
+
+        background: var(--theme-inverted-color-bg);
+        color: var(--theme-inverted-color);
+    }
+}

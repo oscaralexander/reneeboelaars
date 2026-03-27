@@ -1,0 +1,50 @@
+@use '@css/2-tools/mixins' as *;
+
+.masterclass {   
+    &__form {
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: var(--size-xl);
+    }
+
+    .section__inner {
+        background-image: url('/assets/img/masterclass-mobile.webp') !important;
+        background-size: 100% !important;
+        background-position: top left !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .section__eyebrow {
+        color: #FFF;
+    }
+
+    &__content,
+    &__form {
+        flex: 1 1 50%;
+    }
+
+    &__formHeading {
+        text-align: center;
+    }
+
+    &__formIntro {
+        font-size: var(--font-size-l);
+        text-align: center;
+    }
+
+    @include screen-max(l) {
+        .section__inner {
+            padding-top: 50vw;
+        }
+    }
+
+    @include screen-min(l) {
+        .section__inner {
+            background-image: url('/assets/img/masterclass-desktop.webp') !important;
+            background-size: 75% !important;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+color: null
+description: null
+fieldLayouts:
+  18186969-56f0-45b3-9bcc-12eba3f53327:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-16T14:27:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e6eb655a-2769-4d93-81d4-9f3c7dac146d # Photo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e69feef8-3a91-4075-b368-911a8f4fe799
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-16T14:15:36+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 35badb13-d89a-4bd4-bb19-c05232e68351
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-16T14:24:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
+            handle: company
+            includeInCards: false
+            instructions: null
+            label: Company
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c873f754-e518-4c75-b915-7f5ea88b026d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-16T14:24:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
+            handle: position
+            includeInCards: false
+            instructions: null
+            label: Position
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2e1873a-e64f-4edb-8988-4fd7b66645d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-17T08:14:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
+            handle: location
+            includeInCards: false
+            instructions: 'e.g. Stavanger, Norway'
+            label: Location
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4511770-8f45-4dd0-a47f-cad5cc15cc0c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-17T11:30:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d45931f4-1742-430b-b487-1c2c4ebe702f # Link to page
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81cb12c7-4139-4f54-9840-5aa040ad1af1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1e7a2b49-975a-4e76-92bb-1fdc40b87bf6
+        userCondition: null
+handle: person
+hasTitleField: true
+icon: null
+name: Person
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

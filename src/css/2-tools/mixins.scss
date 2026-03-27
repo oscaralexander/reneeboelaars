@@ -1,0 +1,60 @@
+@use '@css/1-settings/variables' as *;
+@use 'sass:map';
+
+@mixin screen-between($breakpoint-min, $breakpoint-max, $orientation: false) {
+    @if map.has-key($breakpoints, $breakpoint-min) {
+        $breakpoint-min: map.get($breakpoints, $breakpoint-min);
+
+        @if map.has-key($breakpoints, $breakpoint-max) {
+            $breakpoint-max: map.get($breakpoints, $breakpoint-max) - 1px;
+
+            @if $orientation {
+                @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) and (orientation: $orientation) {
+                    @content;
+                }
+            } @else {
+                @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+                    @content;
+                }
+            }
+        }
+    }
+}
+
+@mixin screen-max($breakpoint, $orientation: false) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        $breakpoint: map.get($breakpoints, $breakpoint) - 1px;
+    }
+
+    @if $orientation {
+        @media (max-width: $breakpoint) and (orientation: $orientation) {
+            @content;
+        }
+    } @else {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin screen-min($breakpoint, $orientation: false) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        $breakpoint: map.get($breakpoints, $breakpoint);
+    }
+
+    @if $orientation {
+        @media (min-width: $breakpoint) and (orientation: $orientation) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin screen-orientation($orientation) {
+    @media (orientation: $orientation) {
+        @content;
+    }
+}

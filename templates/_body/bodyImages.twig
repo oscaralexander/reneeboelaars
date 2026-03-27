@@ -1,0 +1,18 @@
+{% set images = block.images.all() %}
+
+{% if images|length > 0 %}
+    <section class="blog__body-images">
+        <div class="blog__body-outset">
+            {% set gridClassName = images|length == 2 ? 'l:grid__col--span-6': '' %}
+            <div class="grid m:grid--gap-m">
+                {% for image in images %}
+                    <div class="grid__col {{ gridClassName }}">
+                        <div class="blog__body-imageContainer">
+                            <img alt="{{ image.title }}" class="blog__body-image" src="{{ image.getUrl({ width: 1000 }) }}">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}

@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: products
+instructions: null
+name: Products
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add a product'
+  showCardsInGrid: false
+  showSearchInput: false
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:bac67487-b88a-415f-aa5b-5930908bb20e' # Products
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

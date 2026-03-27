@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: tickerItems
+instructions: null
+name: 'Ticker Items'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - ac2069ce-b1a4-48bc-8f3f-617ab2d04634 # Image
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - f5cdad6c-1efa-463d-b43b-edd8460bd699 # Testimonial
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

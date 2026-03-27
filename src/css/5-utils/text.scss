@@ -1,0 +1,72 @@
+/**
+ * Text alignment
+ */
+
+.u-text-center {
+    text-align: center;
+}
+
+/**
+ * Text size
+ */
+
+.u-text-xs {
+    font-size: var(--font-size-xs);
+}
+
+.u-text-s {
+    font-size: var(--font-size-s);
+}
+
+.u-text-m {
+    font-size: var(--font-size-m);
+}
+
+.u-text-l {
+    font-size: var(--font-size-l);
+}
+
+.u-text-xl {
+    font-size: var(--font-size-xl);
+}
+
+/**
+ * Misc.
+ */
+
+.u-text-nowrap {
+    white-space: nowrap;
+}
+
+.u-text-num,
+.u-text-tabular {
+    font-variant-numeric: tabular-nums;
+}
+
+.u-text-ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.u-text-pre-line {
+    white-space: pre-line;
+}
+
+.u-text-ucfirst:first-letter {
+    text-transform: uppercase;
+}
+
+/**
+ * Styling
+ */
+
+.u-text-b {
+    font-weight: 600;
+}
+
+.u-text-i {
+    font-style: italic;
+}

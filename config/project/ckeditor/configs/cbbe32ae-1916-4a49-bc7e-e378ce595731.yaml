@@ -1,0 +1,13 @@
+css: ".ck.ck-content {\r\n    font-size: 16px;\r\n    line-height: 1.5;\r\n}\r\n\r\n.ck.ck-content p.size-s {\r\n    font-size: .875em;\r\n}\r\n\r\n.ck.ck-content p.size-l {\r\n    font-size: 1.125em;\r\n}\r\n\r\n.ck.ck-content p.size-xl {\r\n    font-size: 1.25em;\r\n}\r\n\r\n.ck.ck-content p.size-xxl {\r\n    font-size: 1.5em;\r\n}"
+headingLevels: false
+js: "return {\r\n  heading: {\r\n    options: [\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        model: 'paragraph',\r\n        title: 'Paragraph',\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphS',\r\n        title: 'Paragraph (Small)',\r\n        view: {\r\n          classes: [\r\n            'size-s',\r\n          ],\r\n          name: 'p',\r\n        },\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphL',\r\n        title: 'Paragraph (Large)',\r\n        view: {\r\n          classes: [\r\n            'size-l',\r\n          ],\r\n          name: 'p',\r\n        },\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphXL',\r\n        title: 'Paragraph (XL)',\r\n        view: {\r\n          classes: [\r\n            'size-xl',\r\n          ],\r\n          name: 'p',\r\n        },\r\n      },\r\n      {\r\n        class: 'ck-heading_paragraph',\r\n        converterPriority: 'high',\r\n        model: 'paragraphXXL',\r\n        title: 'Paragraph (XXL)',\r\n        view: {\r\n          classes: [\r\n            'size-xxl',\r\n          ],\r\n          name: 'p',\r\n        },\r\n      },\r\n    ],\r\n  },\r\n}"
+name: Simple
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - bulletedList
+  - numberedList
+  - createEntry

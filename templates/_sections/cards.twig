@@ -1,0 +1,90 @@
+{% set cards = section.cards.all() %}
+
+{% if cards %}
+    <section class="section cards {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
+        <div class="wrapper section__inner u-theme-{{ section.applyThemeTo == 'section' ? section.theme : '0' }}">
+            <div class="grid grid--gap-xxl">
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">
+                    {% include '_partials/sectionHeader' with { section: section, sticky: true } %}
+                </div>
+                <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-8{% endif %}">
+                    <div class="grid grid--gap-m grid--scrolling">
+                        {% if section.sectionHeaderAlignment == 'left' %}
+                            {% set gridClassName = "l:grid__col--span-6" %}
+                        {% else %}
+                            {% switch section.cards|length %}
+                                {% case 2 %}
+                                    {% set gridClassName = "l:grid__col--span-6" %}
+                                {% case 3 %}
+                                    {% set gridClassName = "l:grid__col--span-4" %}
+                                {% case 4 %}
+                                    {% set gridClassName = "l:grid__col--span-3" %}
+                                {% default %}
+                                    {% set gridClassName = "l:grid__col--span-4" %}
+                            {% endswitch %}
+                        {% endif %}
+                        {% for card in section.cards %}
+                            <div class="grid__col {{ gridClassName }}">
+                                <div class="card u-theme-{{ section.applyThemeTo == 'cards' ? section.theme : '0' }}">
+                                    <div class="card__content">
+                                        {% set image = card.image.one() %}
+                                        {% if image %}
+                                            <picture class="card__picture">
+                                                <source
+                                                    sizes="(max-width: 1024px) 100vw, 33vw"
+                                                    srcset="
+                                                        {{ image.getUrl({ format: 'webp', height: 270, width: 480 }) }} 480w,
+                                                        {{ image.getUrl({ format: 'webp', height: 333, width: 592 }) }} 592w,
+                                                        {{ image.getUrl({ format: 'webp', height: 432, width: 768 }) }} 768w,
+                                                        {{ image.getUrl({ format: 'webp', height: 576, width: 1024 }) }} 1024w,
+                                                        {{ image.getUrl({ format: 'webp', height: 666, width: 1184 }) }} 1184w,
+                                                        {{ image.getUrl({ format: 'webp', height: 864, width: 1536 }) }} 1536w,
+                                                        {{ image.getUrl({ format: 'webp', height: 1152, width: 2048 }) }} 2048w
+                                                    "
+                                                    type="image/webp"
+                                                />
+                                                <img
+                                                    alt="{{ image.title }}"
+                                                    class="card__image"
+                                                    decoding="async"
+                                                    loading="lazy"
+                                                    src="{{ image.getUrl({ format: 'webp', height: 1152, width: 2048 }) }}"
+                                                    srcset="
+                                                        {{ image.getUrl({ format: 'webp', height: 270, width: 480 }) }} 480w,
+                                                        {{ image.getUrl({ format: 'webp', height: 333, width: 592 }) }} 592w,
+                                                        {{ image.getUrl({ format: 'webp', height: 432, width: 768 }) }} 768w,
+                                                        {{ image.getUrl({ format: 'webp', height: 576, width: 1024 }) }} 1024w,
+                                                        {{ image.getUrl({ format: 'webp', height: 666, width: 1184 }) }} 1184w,
+                                                        {{ image.getUrl({ format: 'webp', height: 864, width: 1536 }) }} 1536w,
+                                                        {{ image.getUrl({ format: 'webp', height: 1152, width: 2048 }) }} 2048w
+                                                    "
+                                                >
+                                            </picture>
+                                        {% endif %}
+                                        <div class="card__text">
+                                            {% if card.eyebrow %}
+                                                <h5 class="card__eyebrow">{{ card.eyebrow }}</h5>
+                                            {% endif %}
+                                            <h3 class="card__heading">{{ card.title }}</h3>
+                                            <div class="card__text richText">
+                                                {{ card.text }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% if card.ctas %}
+                                        <footer class="card__footer">
+                                            {% include '_partials/ctas' with { ctas: card.ctas } %}
+                                        </footer>
+                                    {% endif %}
+                                    {% if card.ctas|length == 1 %}
+                                        <a class="card__link" href="{{ card.ctas[0].url }}"></a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+{% endif %}

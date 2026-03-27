@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: includeInNav
+instructions: null
+name: 'Include in navigation?'
+searchable: false
+settings:
+  default: true
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

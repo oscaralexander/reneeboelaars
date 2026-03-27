@@ -1,0 +1,28 @@
+{% set url = block.youtubeUrl %}
+{% set queryString = url|split('?')[1] %}
+{% set queryParams = queryString|split('&') %}
+{% set videoId = null %}
+
+{% for param in queryParams %}
+    {% set parts = param|split('=') %}
+    {% if parts[0] == 'v' %}
+        {% set videoId = parts[1] %}
+    {% endif %}
+{% endfor %}
+
+{% if videoId %}
+    <section class="blog__body-video">
+        <div class="blog__body-outset">
+            <div class="blog__body-videoContainer">
+                <iframe
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    frameborder="0"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    src="https://www.youtube.com/embed/{{ videoId }}"
+                    title="YouTube video player"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+{% endif %}

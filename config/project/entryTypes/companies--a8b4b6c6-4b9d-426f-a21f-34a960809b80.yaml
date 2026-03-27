@@ -1,0 +1,127 @@
+color: null
+description: null
+fieldLayouts:
+  8b50901b-d0df-43aa-b748-f7f946036803:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-15T08:40:24+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 565d0b3f-cbdb-4d7a-ab58-1acc3f81cb1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-07-15T07:14:57+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Heading
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 71a2b32f-8e7e-4245-837c-07d779b67f34
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-15T07:16:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Intro
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 346fa47a-e175-4a21-8065-fdb1b1bd4a22
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9db19c2c-7c42-4850-8220-d2fd611cd0df
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-15T07:17:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4e6f418-47d5-4f88-89ef-8dfd8c5bdd3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-25T09:38:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b1217ba-840d-4b44-97e7-aaa81b276a22
+            userCondition: null
+            warning: null
+            width: 100
+        name: Styling
+        uid: 58060c53-74ec-499a-b98e-532e2f467fac
+        userCondition: null
+handle: companies
+hasTitleField: true
+icon: null
+name: Companies
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

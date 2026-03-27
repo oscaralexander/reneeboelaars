@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 3e1663c4-d2fa-4d1c-b661-5f6fdc4a8055 # Person
+handle: people
+maxAuthors: 1
+name: People
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars
+    enabledByDefault: true
+    hasUrls: true
+    template: people/_entry.twig
+    uriFormat: 'people/{slug}'
+structure:
+  maxLevels: null
+  uid: b2186689-1bde-41af-b041-85c681f03129
+type: structure

@@ -1,0 +1,17 @@
+<div class="ctas">
+    {% for cta in ctas %}
+        {% switch cta.type %}
+            {% case 'button' %}
+                {% set className = 'btn' %}
+            {% case 'text' %}
+                {% set className = 'iconLink' %}
+            {% default %}
+                {% set className = 'btn btn--primary' %}
+        {% endswitch %}
+        <a class="{{ className }}" href="{{ cta.url }}" target="{{ cta.newTab ? '_blank' : '_self' }}">
+            {% if cta.type != 'text' and cta.icon %}<i data-lucide="{{ cta.icon }}"></i>{% endif %}
+            {{ cta.label }}
+            {% if cta.type == 'text' and cta.icon %}<i data-lucide="{{ cta.icon }}"></i>{% endif %}
+        </a>
+    {% endfor %}
+</div>

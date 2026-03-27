@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: applyThemeTo
+instructions: null
+name: 'Apply theme color to'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Section
+        -
+          - value
+          - section
+        -
+          - icon
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Cards
+        -
+          - value
+          - cards
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

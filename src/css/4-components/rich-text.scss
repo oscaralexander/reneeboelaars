@@ -1,0 +1,118 @@
+.richText {
+    line-height: var(--line-height-l);
+
+    p:not(:last-child),
+    ol:not(:last-child),
+    ul:not(:last-child) {
+        margin: 0 0 1.25em 0;
+    }
+
+    a {
+        text-decoration-line: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+    }
+
+    b,
+    strong {
+        color: var(--color-text-hc);
+        font-weight: 600;
+    }
+
+    em,
+    i {
+        font-style: italic;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-1);
+        letter-spacing: var(--letter-spacing);
+        margin: 1.5em 0 .25em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    h4 {
+        font-size: 1.15em;
+    }
+
+    ol {
+        list-style-type: decimal;
+
+        &>li {
+            margin-left: 1.75em;
+            padding-left: .25em;
+        }
+
+        ol,
+        ul {
+            margin: 0;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        list-style-type: disc;
+
+        &>li {
+            margin-left: 1.15em;
+            padding-left: .25em;
+        }
+
+        ol,
+        ul {
+            margin: 0;
+        }
+    }
+
+    ul[style="list-style-type:square;"] {
+        list-style-type: none !important;
+
+
+        li {
+            margin-left: 0;
+            padding-left: 1.75em;
+            position: relative;
+
+            &::before {
+                background: var(--color-text-hc);
+                mask-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg>');
+                mask-size: 1.25em;
+                content: '';
+                display: block;
+                height: 1.25em;
+                left: 0;
+                position: absolute;
+                top: 0.125em;
+                width: 1.25em;
+            }
+        }
+    }
+
+    .size-s {
+        font-size: .875em;
+    }
+
+    .size-l {
+        font-size: 1.125em;
+    }
+
+    .size-xl {
+        font-size: 1.25em;
+    }
+
+    .size-xxl {
+        font-size: 1.5em;
+    }
+}

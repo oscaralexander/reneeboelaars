@@ -1,0 +1,57 @@
+{% set items = block.items.all() %}
+
+{% if items|length > 0 %}
+    <section class="blog__body-items">
+        <div class="blog__body-outset">
+            <div class="stack stack--gap-xxl">
+                {% for item in items %}
+                    {% set image = item.image.one() %}
+                    <article class="blog__body-item">
+                        <div class="grid grid--gap-l">
+                            <div class="grid__col m:grid__col--span-4">
+                                <picture class="blog__body-item-picture">
+                                    <source
+                                        sizes="(max-width: 1024px) 100vw, 25vw"
+                                        srcset="
+                                            {{ image.getUrl({ width: 480, format: 'webp' }) }} 480w,
+                                            {{ image.getUrl({ width: 592, format: 'webp' }) }} 592w,
+                                            {{ image.getUrl({ width: 768, format: 'webp' }) }} 768w,
+                                            {{ image.getUrl({ width: 1024, format: 'webp' }) }} 1024w,
+                                            {{ image.getUrl({ width: 1184, format: 'webp' }) }} 1184w,
+                                            {{ image.getUrl({ width: 1536, format: 'webp' }) }} 1536w,
+                                            {{ image.getUrl({ width: 2048, format: 'webp' }) }} 2048w
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <img
+                                        alt="{{ image.alt }}"
+                                        class="blog__body-item-image"
+                                        decoding="async"
+                                        loading="lazy"
+                                        sizes="(max-width: 1024px) 100vw, 25vw"
+                                        src="{{ image.getUrl({ width: 768 }) }}"
+                                        srcset="
+                                            {{ image.getUrl({ width: 480 }) }} 480w,
+                                            {{ image.getUrl({ width: 592 }) }} 592w,
+                                            {{ image.getUrl({ width: 768 }) }} 768w,
+                                            {{ image.getUrl({ width: 1024 }) }} 1024w,
+                                            {{ image.getUrl({ width: 1184 }) }} 1184w,
+                                            {{ image.getUrl({ width: 1536 }) }} 1536w,
+                                            {{ image.getUrl({ width: 2048 }) }} 2048w
+                                        "
+                                    >
+                                </picture>
+                            </div>
+                            <div class="grid__col m:grid__col--span-8">
+                                <h4 class="blog__body-item-title">{{ item.title }}</h4>
+                                <div class="blog__body-item-text richText">
+                                    {{ item.text }}
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}

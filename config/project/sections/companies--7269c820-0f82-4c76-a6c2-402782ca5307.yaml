@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: bc44169a-5223-4470-a733-c22897a9fec7 # Company
+handle: companies
+maxAuthors: 1
+name: Companies
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars
+    enabledByDefault: true
+    hasUrls: true
+    template: companies/_entry.twig
+    uriFormat: 'companies/{slug}'
+structure:
+  maxLevels: null
+  uid: fe232eb8-9287-47ae-9f50-11c56b51bd92
+type: structure

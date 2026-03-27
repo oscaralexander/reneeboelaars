@@ -1,0 +1,173 @@
+fieldLayouts:
+  c05ea7e7-de01-4c05-b2ab-e15b78390c26:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-15T12:50:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bdfde062-d02e-4f2b-9f59-dbd795bb52bc # Address
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d281f6b8-5b34-4c6e-b919-c13ba4b8203d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-15T12:50:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5d1704cb-532a-4c49-aa08-cbe6220b5b96 # email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a0a6e7a-9f51-4f76-9acc-d97371d50fd9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-15T12:50:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a02b82ac-1476-4c9c-85f7-c405ae4688b4 # Phone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 016988f1-f664-4582-a805-4504758fb98a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-16T07:00:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 04623003-c129-4410-95f9-76c269299461 # Add WhatsApp link for phone number?
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0009a02-956c-4981-b16c-dce9b5dc1675
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-15T12:52:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 825a0042-356f-4be8-9423-d4242dfb57ed # VAT ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ceea93d2-8afa-4bb8-8727-5e11f46849f3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-16T07:00:08+00:00'
+            elementCondition: null
+            heading: 'Social URLs'
+            type: craft\fieldlayoutelements\Heading
+            uid: 17bfe663-b111-4f57-bebc-e4ed629f8369
+            userCondition: null
+          -
+            dateAdded: '2025-07-16T07:00:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0c4407ce-b664-4df6-b4b4-bda67b701639 # Website URL
+            handle: instagramUrl
+            includeInCards: false
+            instructions: null
+            label: 'Instagram URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a73c255-498c-44c9-9ec0-bf3b367f274f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-16T07:00:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0c4407ce-b664-4df6-b4b4-bda67b701639 # Website URL
+            handle: linkedinUrl
+            includeInCards: false
+            instructions: null
+            label: 'LinkedIn URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e441e30a-8f48-4c01-b018-ad65469eefd4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-12-18T13:28:38+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0c4407ce-b664-4df6-b4b4-bda67b701639 # Website URL
+            handle: spotifyUrl
+            includeInCards: false
+            instructions: null
+            label: 'Spotify URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d929f3eb-bfdf-4242-abd3-309d8a5bf1b9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-16T07:00:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0c4407ce-b664-4df6-b4b4-bda67b701639 # Website URL
+            handle: xUrl
+            includeInCards: false
+            instructions: null
+            label: 'X URL'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76c25be7-785e-47cc-b273-09d6691bc273
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contact
+        uid: 2aabea89-329d-4d5d-a1af-091182d59482
+        userCondition: null
+handle: contact
+name: Contact
+sortOrder: 2

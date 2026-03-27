@@ -1,0 +1,27 @@
+.ticker {
+    cursor: grab;
+    overflow: hidden;
+    touch-action: none;
+    user-select: none;
+
+    &__inner {
+        display: inline-flex;
+        flex-flow: row nowrap;
+        height: 100%;
+        will-change: transform;
+    }
+
+    &__item {
+        flex-shrink: 0;
+
+        &>img {
+            height: 100%;
+            pointer-events: none;
+            width: auto;
+        }
+    }
+
+    &.is-grabbing {
+        cursor: grabbing;
+    }
+}

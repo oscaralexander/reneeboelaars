@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: f5cdad6c-1efa-463d-b43b-edd8460bd699 # Testimonial
+handle: testimonials
+maxAuthors: 1
+name: Testimonials
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars
+    enabledByDefault: true
+    hasUrls: true
+    template: testimonials/_entry.twig
+    uriFormat: 'testimonials/{slug}'
+structure:
+  maxLevels: null
+  uid: 789ce46b-a4ba-4204-a902-0e6fc4a35c01
+type: structure

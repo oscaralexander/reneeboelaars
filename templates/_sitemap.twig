@@ -1,0 +1,16 @@
+{% set response = craft.app.response %}
+{% do response.headers.set('Content-Type', 'application/xml') %}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% set entries = craft.entries.section('pages').all() %}
+    {% for entry in entries %}
+        <url>
+            <changefreq>weekly</changefreq>
+            {% if entry.dateUpdated is defined %}
+                <lastmod>{{ entry.dateUpdated|date('c') }}</lastmod>
+            {% endif %}
+            <loc>{{ entry.url }}</loc>
+            <priority>{% if entry.slug == 'home' %}1.0{% else %}0.5{% endif %}</priority>
+        </url>
+    {% endfor %}
+</urlset>

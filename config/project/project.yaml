@@ -1,0 +1,249 @@
+dateModified: 1769597269
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Structures
+      key: 'heading:b8b82143-0078-47c7-8c3f-1ae026672b75'
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:bcb79ec8-b0e0-41f3-9214-b47c95201ca6' # Pages
+      tableAttributes:
+        - slug
+        - status
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:ab0b17b8-81ef-4f1b-8f10-e466489940ed' # Legal
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:7269c820-0f82-4c76-a6c2-402782ca5307' # Companies
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:393a1e84-3c53-4162-9d7c-74ee0bab53c5' # Testimonials
+      tableAttributes:
+        - 'fieldInstance:167d0246-13cb-48cd-94db-6927f4b685ee'
+        - 'field:6423142b-070e-40f3-a5bf-60ec6f619554' # Author image
+      type: native
+    -
+      key: 'section:bac67487-b88a-415f-aa5b-5930908bb20e' # Products
+      type: native
+    -
+      key: 'section:780fc932-f433-4460-9912-b6b95678600f' # Blogs
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:da4673a2-8ccd-4f0a-a4c3-6fa3da66fc0d' # People
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+email:
+  fromEmail: mail@oscaralexander.com
+  fromName: Boilerplate
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  local:
+    hasUrls: true
+    name: Local
+    settings:
+      path: '@storage/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    0ab5213d-4f1d-4247-bb3a-9f6b7867dac5: Body # Body
+    0c4407ce-b664-4df6-b4b4-bda67b701639: 'Website URL' # Website URL
+    0d6772dd-d5bb-41e6-a5fa-3ed12a345861: Blog # Blog
+    0e33a11d-adeb-4712-abc9-ae9d0f7981cc: 'YouTube URL' # YouTube URL
+    0e47a0f0-320e-48e8-8fa3-49b1ddaed041: People # People
+    0f8ed211-1979-48e5-beb9-d9bea99e1a76: Images # Images
+    00fd1296-dab2-47cb-b4cf-bcdc53f922e3: Stats # Stats
+    1d38ad8b-8f95-4f1f-9495-5f20339f6f9d: Items # Items
+    1fd6196a-193c-401a-a6d3-e5db00568179: Description # Description
+    2a62b03c-2bc3-46af-8b72-3b6c66529e58: Image(s) # Image(s)
+    2ba1c57c-3cf0-40af-9276-7f085079ea8d: 'Call to Action' # Call to Action
+    2bf50963-c9d8-432d-918d-8db76ff99f2d: Code # Code
+    3e3cd250-f9e2-4359-b2bd-61a1652fb125: Testimonials # Testimonials
+    3e1663c4-d2fa-4d1c-b661-5f6fdc4a8055: Person # Person
+    3fd9af07-4a0e-4a81-a295-08f9458ee86f: People # People
+    4fce130f-1516-4449-94c0-5f3609d7d2f8: Contact # Contact
+    5b484456-92a8-451b-8bfc-e8cac4909a50: 'Text position' # Text position
+    5d1704cb-532a-4c49-aa08-cbe6220b5b96: email # email
+    5f7e8cd7-6cc5-458f-90dc-7953a08ded99: 'Text width' # Text width
+    06a7d928-2733-422b-874c-28f8c2284edb: Testimonials # Testimonials
+    6cd47c8a-7515-48fa-a3bd-a5eb0bb5b18d: 'MailBlue Form' # MailBlue Form
+    7f0916da-3baa-459b-b8f1-73c6d5309464: Cards # Cards
+    7fb3092f-696c-450f-afe9-b1d80dd29718: 'YouTube Video ID' # YouTube Video ID
+    08a3ce3c-9485-46ce-9b4f-9ad497552e2c: Video # Video
+    9e7ef0ca-bdf6-434e-9bcd-15b5f508d201: Icon # Icon
+    09e44c40-286c-4a43-aebc-3a92d572e6fc: Page # Page
+    9ed560e3-bb58-46ac-b3c8-3b3667509a65: People # People
+    9fcbb220-b697-4379-81b5-e781f9068c61: 'Blog text' # Blog text
+    010a5f91-ff2c-499b-a3d4-f00c9311314e: Masterclass # Masterclass
+    14b58b9e-71a4-40e0-977d-5f7842db3661: Sitemap # Sitemap
+    21f0753c-da41-4fe9-8bdc-c851beb5acd5: Columns # Columns
+    26acb532-e8a4-4e24-bd62-b79d3a7d5cd7: 'Theme color' # Theme color
+    027dd2a6-cdb5-4051-b1c8-523b3493c15d: Navigation # Navigation
+    32a4a09f-6ff4-4cdc-9381-b3d086ddf5dc: Logos # Logos
+    45b27572-33f7-4ecb-9e2b-43bad0388805: Columns # Columns
+    48f4ce5d-5120-4dd1-843f-0021b92219f8: Item # Item
+    50e0cd0c-38a3-4d3d-a601-113f88273bf0: Hero # Hero
+    67aabd95-1a33-42f9-8870-0d419b6007ab: 'Renee Boelaars' # Renee Boelaars
+    80b3fe6d-fa96-4075-a87b-66e40195b590: Eyebrow # Eyebrow
+    93be216b-1870-4719-b415-8b80b103c6cc: Stats # Stats
+    93f9eddd-2e94-4333-8db0-8a42333ccedf: 'Include in navigation?' # Include in navigation?
+    97b88b49-383f-4962-a6f6-668f5b27da01: Blogs # Blogs
+    99a87105-417f-4a97-a098-c99e5f7843b1: Sections # Sections
+    99eb0135-a737-4a15-9781-85b26516afe3: Stat # Stat
+    282e9005-dbc2-492c-ab72-d44ef796c4b3: Testimonials # Testimonials
+    393a1e84-3c53-4162-9d7c-74ee0bab53c5: Testimonials # Testimonials
+    396d98f5-7aa5-4297-aac0-6ad7d2625db0: Image # Image
+    447f28a6-2439-4093-82cd-6125f73e4654: 'Full-width section?' # Full-width section?
+    0483a197-c381-43d6-8e7d-f74489632241: 'Use parallax effect on images?' # Use parallax effect on images?
+    692ce4fc-23b7-44b2-85a5-bab07af1139b: Text # Text
+    727a2a7f-ddaf-4d33-bf95-18a127e23966: Blog # Blog
+    780fc932-f433-4460-9912-b6b95678600f: Blogs # Blogs
+    825a0042-356f-4be8-9423-d4242dfb57ed: 'VAT ID' # VAT ID
+    876fd15c-0530-4b9a-a606-fd551243dc02: 'Accordion Item' # Accordion Item
+    878e0c1f-b9cf-4242-a3f5-f50aad792696: Accordion # Accordion
+    1696b5e5-1e56-4fd6-9ae9-aad6d6b67623: Cards # Cards
+    2510ddde-ad78-4328-9d12-101c9179022f: Brand # Brand
+    3198be24-dc1d-4dd1-b50f-b1e529bedeaa: 'Renee Boelaars' # Renee Boelaars
+    3460d60f-4a24-4f0c-b444-5903e13df418: Card # Card
+    6345b7ac-0c47-4812-b1d4-fcf64bc21cea: Tagline # Tagline
+    6693b5e2-3de9-49dd-86b8-3d6fcbf00e65: 'CTA URL' # CTA URL
+    6730ebad-785b-4926-bf59-9a71661027e8: Settings # Settings
+    7269c820-0f82-4c76-a6c2-402782ca5307: Companies # Companies
+    872711cc-0273-4da5-bd4c-4338a68b9232: 'Ticker Items' # Ticker Items
+    971611db-49bb-4f54-a030-a8f4cafaa6b6: Products # Products
+    3393483c-2842-437e-bc0a-ab153e66fdbf: 'Price unit' # Price unit
+    04623003-c129-4410-95f9-76c269299461: 'Add WhatsApp link for phone number?' # Add WhatsApp link for phone number?
+    6318606e-e3fc-473a-b483-13e2e4dd2afd: Items # Items
+    6423142b-070e-40f3-a5bf-60ec6f619554: 'Author image' # Author image
+    a02b82ac-1476-4c9c-85f7-c405ae4688b4: Phone # Phone
+    a4c6009f-3a59-4812-80c1-5b2ebf8fa5c8: SEO # SEO
+    a7a8daf6-7f51-497e-87c8-1dfee48440fc: Textarea # Textarea
+    a7b3e5b7-6148-4206-a92d-fd53efbd592d: 'Blog items limit' # Blog items limit
+    a8a676aa-bcc6-42ec-b632-4e909293a1ab: 'Apply theme color to' # Apply theme color to
+    a8b4b6c6-4b9d-426f-a21f-34a960809b80: Companies # Companies
+    a28da4e4-6474-46d0-9118-d63a5a1a1fd3: 'Preview Image' # Preview Image
+    a46dbf22-93c5-4217-aab8-633d286f778f: Logo # Logo
+    aae9646c-8e25-477e-859a-0f755efbfcda: 'Media sticks to top?' # Media sticks to top?
+    ab0b17b8-81ef-4f1b-8f10-e466489940ed: Legal # Legal
+    ac2069ce-b1a4-48bc-8f3f-617ab2d04634: Image # Image
+    ad8c939a-c70c-4463-9d08-83e2cfe7fa0b: Title # Title
+    ad16611e-9a20-4be7-9b3f-f74408342afc: Media # Media
+    af09463e-3ae3-4197-bfd8-a026dd7b3230: 'Rich text' # Rich text
+    b071e616-7307-4613-961a-77e04a35e223: 'Blog Index' # Blog Index
+    b8a2fae7-8fc2-4ed9-9510-07d1bcccdacf: 'Google Maps URL' # Google Maps URL
+    b29bda53-6fe5-4d47-843d-6325730133c3: CTAs # CTAs
+    b97f6a74-7d26-4113-a064-181027478f71: Features # Features
+    ba552aa7-6c34-4d78-8422-289c1081a004: Ticker # Ticker
+    bac67487-b88a-415f-aa5b-5930908bb20e: Products # Products
+    bc44169a-5223-4470-a733-c22897a9fec7: Company # Company
+    bcb79ec8-b0e0-41f3-9214-b47c95201ca6: Pages # Pages
+    bdafabfc-3fd4-4308-8715-00d9cd86f085: Image # Image
+    bdfde062-d02e-4f2b-9f59-dbd795bb52bc: Address # Address
+    bf91fe54-3286-4f7e-819d-ed8ffa367552: Users # Users
+    c2a9c26f-00ce-4a49-bfc5-cba5d23652f3: 'Accordion Items' # Accordion Items
+    c4dec5a2-c82d-4380-8041-f483d7febbb0: Text # Text
+    c4e6aafb-f94c-47d1-81e6-f691fb6e7338: 'From price?' # From price?
+    c8d42f98-440c-490c-aed6-38551d980f24: Products # Products
+    c716490a-fb42-4ca1-9579-64274cca2df6: Color # Color
+    caf77d6d-ca93-498f-b7f2-e38a96563691: Sitemap # Sitemap
+    cbafe277-e6eb-4635-b326-7043b1e0f8a0: 'Section header alignment' # Section header alignment
+    cbbe32ae-1916-4a49-bc7e-e378ce595731: Simple # Simple
+    cf16f708-96c3-4f9c-8d90-35b60350d138: 'Embed code' # Embed code
+    d9d07fc4-9677-4550-b080-2a25872689be: 'Text & Media' # Text & Media
+    d45931f4-1742-430b-b487-1c2c4ebe702f: 'Link to page' # Link to page
+    d2952024-f715-470f-8990-a21c72cb9d5f: Column # Column
+    da4673a2-8ccd-4f0a-a4c3-6fa3da66fc0d: People # People
+    e6eb655a-2769-4d93-81d4-9f3c7dac146d: Photo # Photo
+    e136a4f5-bec7-4a0d-82fa-e73840542160: 'Public Schema' # Public Schema
+    eb702cfa-c688-494d-84ff-bfb378f4f9f0: Product # Product
+    eeb05e24-d71b-40f4-a481-418b4f46ce71: Height # Height
+    eeb1cf0d-b121-487c-a560-791b28fe5441: Rows # Rows
+    f5cdad6c-1efa-463d-b43b-edd8460bd699: Testimonial # Testimonial
+    f69505ff-680d-4ce8-9395-d80b607391d9: Heading # Heading
+    fb7a6770-6dc8-42b5-a923-e8c086be5116: Text # Text
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  craftagram:
+    edition: standard
+    enabled: true
+    licenseKey: XLP4PEGA0TGQZK5UWMWTLX1N
+    schemaVersion: 3.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Renee Boelaars'
+  retryDuration: null
+  schemaVersion: 5.8.0.3
+  timeZone: Europe/Amsterdam
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: bf91fe54-3286-4f7e-819d-ed8ffa367552 # Users
+  require2fa: false
+  requireEmailVerification: true

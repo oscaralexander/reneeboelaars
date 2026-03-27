@@ -1,0 +1,15 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: var(--wrapper-width);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    width: 100%;
+
+    &__outset {
+        margin: 0 calc(var(--gutter) * -1);
+    }
+
+    &--narrow {
+        max-width: var(--wrapper-width-narrow);
+    }
+}

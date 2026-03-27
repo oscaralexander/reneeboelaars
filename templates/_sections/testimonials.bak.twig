@@ -1,0 +1,51 @@
+{% set testimonials = section.testimonials.all() %}
+{% if testimonials is empty %}
+    {% set testimonials = craft.entries.section('testimonials').all() %}
+{% endif %}
+
+<section class="section testimonials">
+    <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme }}{% endif %}">
+        {% include '_partials/sectionHeader' with { section: section } %}
+        <div class="grid grid--scrolling grid--gap-m">
+            {% switch testimonials|length %}
+                {% case 2 %}
+                    {% set gridClassName = "l:grid__col--span-6" %}
+                {% case 3 %}
+                    {% set gridClassName = "l:grid__col--span-4" %}
+                {% case 4 %}
+                    {% set gridClassName = "l:grid__col--span-3" %}
+                {% default %}
+                    {% set gridClassName = "l:grid__col--span-4" %}
+            {% endswitch %}
+            {% for testimonial in testimonials %}
+                <div class="grid__col {{ gridClassName }}">
+                    <article class="testimonial">
+                        <div class="testimonial__text richText">
+                            {{ testimonial.text }}
+                        </div>
+                        <footer class="testimonial__author">
+                            {% set image = testimonial.authorImage.one() %}
+                            {% if image %}
+                                <img
+                                    alt="{{ image.alt }}"
+                                    class="testimonial__author-image"
+                                    decoding="async"
+                                    loading="lazy"
+                                    src="{{ image.getUrl({ height: 160, width: 160, format: 'webp' }) }}"
+                                >
+                            {% endif %}
+                            <div class="testimonial__author-text">
+                                <div class="testimonial__author-name">
+                                    {{ testimonial.title }}
+                                </div>
+                                <div class="testimonial__author-company">
+                                    {% if testimonial.authorPosition %}{{ testimonial.authorPosition }}, {% endif %}{{ testimonial.authorCompany }}
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

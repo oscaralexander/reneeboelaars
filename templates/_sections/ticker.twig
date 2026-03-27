@@ -1,0 +1,46 @@
+{% set tickerItems = section.tickerItems.all() %}
+
+{% if tickerItems %}
+    <section class="section {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
+        <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
+            {% include '_partials/sectionHeader' with { section: section, headerAlignment: 'top' } %}
+            <div class="tickerSection__ticker wrapper__outset">
+                {% set rows = [] %}
+                {% if section.rows == '2' %}
+                    {% set row1 = tickerItems|slice(0, (tickerItems|length / 2)|round(0, 'floor')) %}
+                    {% set row2 = tickerItems|slice((tickerItems|length / 2)|round(0, 'floor')) %}
+                    {% set rows = [row1, row2] %}
+                {% else %}
+                    {% set rows = [tickerItems] %}
+                {% endif %}
+                <div class="stack stack--gap-m">
+                    {% for row in rows %}
+                        {% set direction = loop.first ? 'left' : 'right' %}
+                        <div class="ticker js-ticker" data-ticker-direction="{{ direction }}">
+                            <div class="ticker__inner js-tickerInner">
+                                {% for item in row %}
+                                    {% set type = item.getType().handle %}
+                                    <div class="ticker__item tickerSection__item tickerSection__item-{{ type }}">                                     
+                                        {% switch type %}
+                                            {% case 'testimonial' %}
+                                                {% include '_partials/testimonial' with { testimonial: item } %}
+                                            {% case 'image' %}
+                                                {% set image = item.image.one() %}
+                                                <img
+                                                    alt="{{ image.alt }}">
+                                                    height="{{ image.height }}"
+                                                    src="{{ image.getUrl({ format: 'webp', width: 800 }) }}"
+                                                    style="aspect-ratio: {{ image.width }} / {{ image.height }};"
+                                                    width="{{ image.width }}"
+                                                >
+                                        {% endswitch %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

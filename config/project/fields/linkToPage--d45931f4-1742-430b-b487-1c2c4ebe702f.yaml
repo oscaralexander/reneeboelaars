@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: linkToPage
+instructions: null
+name: 'Link to page'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 0
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: false
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:bcb79ec8-b0e0-41f3-9214-b47c95201ca6' # Pages
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

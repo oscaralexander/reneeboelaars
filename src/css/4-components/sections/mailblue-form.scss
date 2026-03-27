@@ -1,0 +1,137 @@
+.mailblueForm {
+    &__form {
+        form[id^="_form_"]._inline-form {
+            background-image: url('/assets/img/wh.png') !important;
+            margin: 0 !important;
+            padding: 0 !important;
+
+            ._form_element {
+                margin-bottom: 1rem !important;
+            }
+
+            ._form-label {
+                font-size: var(--font-size-m) !important;
+                font-weight: 600 !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="date"],
+            input[type="time"],
+            input[type="url"],
+            input[type="search"],
+            input[type="password"] {
+                background-color: transparent !important;
+                border: 1px solid var(--input-border-color) !important;
+                border-radius: var(--input-border-radius) !important;
+                color: var(--input-color) !important;
+                font-size: var(--input-font-size) !important;
+                font-weight: var(--input-font-weight) !important;
+                height: var(--input-height) !important;
+                line-height: var(--input-line-height) !important;
+                outline: var(--input-outline) !important;
+                padding: 0 var(--size-m) !important;
+
+                &:focus {
+                    border-color: var(--input-border-color-focus) !important;
+                    outline: var(--input-outline-focus) !important;
+                }
+            }
+
+            ._checkbox-radio {
+                input[type="checkbox"] {
+                    height: 0;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 0;
+                }
+
+                label {
+                    align-items: center;
+                    cursor: pointer;
+                    display: flex;
+                    font-size: var(--font-size-m) !important;
+                    gap: .5rem;
+                    position: relative;
+                    user-select: none;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
+
+                    &::before {
+                        background: var(--option-bg-color);
+                        border: 1px solid var(--option-border-color);
+                        border-radius: .25rem;
+                    }
+
+                    &::after {
+                        mask-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16,5.875L7.75,14.125l-3.75-3.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>');
+                        mask-size: 100%;
+                        background: #fff;
+                        left: 0;
+                        opacity: 0;
+                        position: absolute;
+                        top: calc(50% - .625rem);
+                        transform: scale(.5);
+                        transition: var(--duration-s);
+                    }
+                }
+
+                &:has(input:checked) {
+                    label {
+                        &::before {
+                            background: var(--option-bg-color-checked);
+                            border-color: var(--option-border-color-checked);
+                        }
+
+                        &::after {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+            ._submit {
+                align-items: center !important;
+                background: var(--btn-bg-color) !important;
+                border: none !important;
+                border-radius: var(--btn-border-radius) !important;
+                color: var(--btn-color) !important;
+                cursor: pointer;
+                display: inline-flex !important;
+                font-variant-numeric: tabular-nums !important;
+                font-weight: var(--btn-font-weight) !important;
+                gap: .5em !important;
+                height: var(--btn-height) !important;
+                justify-content: center;
+                outline: var(--btn-outline) !important;
+                outline-offset: 2px !important;
+                padding: 1px calc(var(--btn-height) * .5);
+                position: relative !important;
+                text-decoration: none;
+                text-wrap: nowrap !important;
+                transition: background var(--duration-m),
+                    color var(--duration-m) !important;
+                user-select: none !important;
+
+                &:hover {
+                    background: var(--btn-bg-color-hover) !important;
+                    color: var(--btn-color-hover) !important;
+                }
+
+                &:focus-visible {
+                    outline: var(--input-outline-focus) !important;
+                }
+            }
+        }
+    }
+}

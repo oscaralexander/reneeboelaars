@@ -1,0 +1,81 @@
+fieldLayouts:
+  59079ce9-18ea-4dbf-88d5-4fd2f6f150b0:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-15T12:08:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a46dbf22-93c5-4217-aab8-633d286f778f # Logo
+            handle: logoNav
+            includeInCards: false
+            instructions: null
+            label: 'Logo (Navigation)'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7971f1aa-8ea1-4cb0-ae8f-86b9ea5ef7b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-15T19:40:23+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a46dbf22-93c5-4217-aab8-633d286f778f # Logo
+            handle: logoFooter
+            includeInCards: false
+            instructions: null
+            label: 'Logo (Footer)'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5e8f154a-e7cf-44e8-a7a1-426e7b171517
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-16T10:05:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
+            handle: footerText
+            includeInCards: false
+            instructions: null
+            label: 'Footer text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c7e644a1-0040-4fd1-8144-6495bdd1a8ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-02T18:33:25+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a28da4e4-6474-46d0-9118-d63a5a1a1fd3 # Preview Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 044c6661-9ad2-4ecc-b527-102c0288dd5f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Brand
+        uid: c5ec56cc-9fc0-4ea9-a281-acbe40ae59ba
+        userCondition: null
+handle: brand
+name: Brand
+sortOrder: 1

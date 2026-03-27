@@ -1,0 +1,22 @@
+@use '@css/2-tools/mixins' as *;
+
+.meta {
+    align-items: center;
+    color: var(--color-text-lc);
+    display: flex;
+    font-size: var(--font-size-s);
+    gap: var(--size-s);
+
+    & > li {
+        &:not(:first-child) {
+            &::before {
+                content: "·";
+                margin-right: var(--size-s);
+            }
+        }
+    }
+
+    @include screen-min(l) {
+        font-size: var(--font-size-m);
+    }
+}
