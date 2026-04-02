@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: value
-            includeInCards: false
             instructions: null
             label: Value
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +28,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: label
-            includeInCards: false
             instructions: null
             label: Label
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField

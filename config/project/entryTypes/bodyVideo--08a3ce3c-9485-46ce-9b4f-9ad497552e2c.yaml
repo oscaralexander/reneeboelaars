@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0e33a11d-adeb-4712-abc9-ae9d0f7981cc # YouTube URL
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

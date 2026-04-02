@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e6eb655a-2769-4d93-81d4-9f3c7dac146d # Photo
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -33,7 +31,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -42,7 +39,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -60,10 +56,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: company
-            includeInCards: false
             instructions: null
             label: Company
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -77,10 +71,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: position
-            includeInCards: false
             instructions: null
             label: Position
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -94,10 +86,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: location
-            includeInCards: false
             instructions: 'e.g. Stavanger, Norway'
             label: Location
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -111,10 +101,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d45931f4-1742-430b-b487-1c2c4ebe702f # Link to page
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

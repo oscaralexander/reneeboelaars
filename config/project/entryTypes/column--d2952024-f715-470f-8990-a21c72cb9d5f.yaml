@@ -26,10 +26,8 @@ fieldLayouts:
               fieldContext: global
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -53,10 +51,8 @@ fieldLayouts:
               fieldContext: global
             fieldUid: 9e7ef0ca-bdf6-434e-9bcd-15b5f508d201 # Icon
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -80,10 +76,8 @@ fieldLayouts:
               fieldContext: global
             fieldUid: c716490a-fb42-4ca1-9579-64274cca2df6 # Color
             handle: iconColor
-            includeInCards: false
             instructions: null
             label: 'Icon color'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -100,7 +94,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: Heading
@@ -109,7 +102,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -127,10 +119,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: text
-            includeInCards: true
             instructions: null
             label: Text
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -144,10 +134,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -158,6 +146,7 @@ fieldLayouts:
         name: Content
         uid: ad36e9fa-825a-477c-a955-e4bf292f4e76
         userCondition: null
+    thumbFieldKey: 'layoutElement:228e5a17-b12a-484d-965e-e78a2851c86f'
 handle: column
 hasTitleField: true
 icon: null

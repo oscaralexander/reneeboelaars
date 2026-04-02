@@ -13,9 +13,9 @@
             >
                 <div></div>
             </button>
-            <a class="nav__logoLink"href="{{ siteUrl }}">
+            <a class="nav__logoLink" href="{{ siteUrl }}">
                 {% if logo %}
-                    <img alt="{{ currentSite.name }}" class="nav__logo" src="{{ logo.url }}">
+                    <img alt="{{ currentSite.name }}" class="nav__logo" height="{{ logo.height }}" src="{{ logo.url }}" style="aspect-ratio: {{ logo.width ~ '/' ~ logo.height }};" width="{{ logo.width }}">
                 {% else %}
                     {{ currentSite.name }}
                 {% endif %}

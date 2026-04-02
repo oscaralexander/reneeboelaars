@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,10 +28,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -50,7 +46,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -59,7 +54,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -77,10 +71,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -94,10 +86,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
-            includeInCards: false
             instructions: 'Add a single CTA to make the entire card clickable.'
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

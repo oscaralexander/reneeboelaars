@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 9fcbb220-b697-4379-81b5-e781f9068c61 # Blog text
             handle: text
-            includeInCards: false
             instructions: null
             label: Text
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

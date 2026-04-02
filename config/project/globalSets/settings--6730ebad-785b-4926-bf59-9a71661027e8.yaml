@@ -11,10 +11,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0483a197-c381-43d6-8e7d-f74489632241 # Use parallax effect on images?
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +26,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 2bf50963-c9d8-432d-918d-8db76ff99f2d # Code
             handle: htmlHead
-            includeInCards: false
             instructions: 'HTML code to be placed inside the <head> tag.'
             label: 'HTML <head>'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

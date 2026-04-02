@@ -15,10 +15,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: body
-            includeInCards: true
             instructions: null
             label: Body
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -32,10 +30,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: pullQuote
-            includeInCards: false
             instructions: null
             label: 'Pull quote'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -52,7 +48,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: Author
@@ -61,7 +56,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: false
             size: null
@@ -79,10 +73,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: authorCompany
-            includeInCards: false
             instructions: null
             label: 'Author company'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -96,10 +88,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: authorPosition
-            includeInCards: false
             instructions: null
             label: 'Author position'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -113,10 +103,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 6423142b-070e-40f3-a5bf-60ec6f619554 # Author image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -127,6 +115,7 @@ fieldLayouts:
         name: Content
         uid: 31e9e6c3-3c51-47c6-9691-be6ec59f539b
         userCondition: null
+    thumbFieldKey: 'layoutElement:095c2b37-7811-41b7-8cf9-bbf6ff5e5bff'
 handle: testimonial
 hasTitleField: true
 icon: null

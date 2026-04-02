@@ -15,10 +15,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -35,7 +33,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -44,7 +41,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: false
             size: null
@@ -62,10 +58,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
-            includeInCards: false
             instructions: null
             label: Intro
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -79,10 +73,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: text
-            includeInCards: true
             instructions: null
             label: Text
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -96,10 +88,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -113,10 +103,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 5b484456-92a8-451b-8bfc-e8cac4909a50 # Text position
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -130,10 +118,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -147,10 +133,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 7fb3092f-696c-450f-afe9-b1d80dd29718 # YouTube Video ID
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -170,10 +154,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -187,10 +169,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -204,10 +184,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: aae9646c-8e25-477e-859a-0f755efbfcda # Media sticks to top?
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -218,6 +196,7 @@ fieldLayouts:
         name: Styling
         uid: f466642a-92bb-4d68-9a02-b3f2b46ca6d6
         userCondition: null
+    thumbFieldKey: 'layoutElement:bc381108-b429-486c-9ead-3e30ee21a328'
 handle: textMedia
 hasTitleField: true
 icon: null
