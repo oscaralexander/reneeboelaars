@@ -2,7 +2,21 @@
 
 <section class="section hero hero--{{ section.height ?? 'fit' }} hero--width-{{ section.textWidth }} u-theme-{{ section.theme }} js-equinox">
     {% if image %}
-        <img alt="{{ image.title }}" src="{{ image.url }}" class="hero__backdrop">
+        <img
+            alt="{{ image.title }}"
+            class="hero__backdrop"
+            sizes="100vw"
+            src="{{ image.getUrl({ format: 'webp', upscale: false, width: 2048 }) }}"
+            srcset="
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 480 }) }} 480w,
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 592 }) }} 592w,
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 768 }) }} 768w,
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 1024 }) }} 1024w,
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 1184 }) }} 1184w,
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 1536 }) }} 1536w,
+                {{ image.getUrl({ format: 'webp', upscale: false, width: 2048 }) }} 2048w
+            "
+        >
     {% endif %}
     <div class="wrapper section__inner">
         <div class="grid grid--gap-xl grid--middle l:grid--gap-xxl">
