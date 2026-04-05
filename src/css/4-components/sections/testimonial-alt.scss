@@ -46,4 +46,9 @@
             font-weight: 600;
         }
     }
+
+    &__more {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }

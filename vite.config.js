@@ -33,8 +33,10 @@ export default ({ command }) => ({
         alias: {
             '@': path.resolve(__dirname, 'src'),
             '@css': path.resolve(__dirname, 'src/css'),
+            '@fonts': path.resolve(__dirname, 'src/fonts'),
             '@js': path.resolve(__dirname, 'src/js'),
             '@npm': path.resolve(__dirname, 'node_modules'),
+            '@web': path.resolve(__dirname, 'web'),
         },
     },
     server: {

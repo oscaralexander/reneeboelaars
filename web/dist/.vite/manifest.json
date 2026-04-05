@@ -1,12 +1,62 @@
 {
+  "src/fonts/Figtree-Italic-latin-ext.woff2": {
+    "file": "assets/Figtree-Italic-latin-ext-Q0qr0lrZ.woff2",
+    "src": "src/fonts/Figtree-Italic-latin-ext.woff2",
+    "integrity": "sha384-cYVoUaD7b/cEbv4sb20GElrqKK1pSoZ2v82G81Qvdj3SWfPz8n3+m0H2Yko0X6co"
+  },
+  "src/fonts/Figtree-Italic.woff2": {
+    "file": "assets/Figtree-Italic-BEAWuiTz.woff2",
+    "src": "src/fonts/Figtree-Italic.woff2",
+    "integrity": "sha384-p1GYfd0e5NwAnc+BewhjJTcrbh2cHlAWFsziN69h/c4trBReafHUHDRx/JIQiBv3"
+  },
+  "src/fonts/Figtree-latin-ext.woff2": {
+    "file": "assets/Figtree-latin-ext-DCwSJGxG.woff2",
+    "src": "src/fonts/Figtree-latin-ext.woff2",
+    "integrity": "sha384-9KSE+iGQ6oJir2yKgmVPQ/gODeYwkECMhN0JLI++3ClZD+uwv045wTApXF0Xeydb"
+  },
+  "src/fonts/Figtree.woff2": {
+    "file": "assets/Figtree-D_ZTVpCC.woff2",
+    "src": "src/fonts/Figtree.woff2",
+    "integrity": "sha384-d6yvnpflv3m5EhqKK5tQtz0HGXMOiCO1F3+L6ha906VSjNeZv+OL3TCteJovhzem"
+  },
+  "src/fonts/Parkinsans-latin-ext.woff2": {
+    "file": "assets/Parkinsans-latin-ext-CTfSnvlK.woff2",
+    "src": "src/fonts/Parkinsans-latin-ext.woff2",
+    "integrity": "sha384-yiixrfWQmCkwnQ7wYh3zCIjfxf94icqX1VJytag7/wvN34UTE/Aho5+yBct8KKRM"
+  },
+  "src/fonts/Parkinsans.woff2": {
+    "file": "assets/Parkinsans-mRuZnjHQ.woff2",
+    "src": "src/fonts/Parkinsans.woff2",
+    "integrity": "sha384-7DjR09oNU7RgYLtVWEJn+tYTgARcP5jwWzu7tblONjLED56dBZ6dLAvrq9VW3MLy"
+  },
   "src/js/index.js": {
-    "file": "assets/app-C_U-hmz3.js",
+    "file": "assets/app-bbEwWzYI.js",
     "name": "app",
     "src": "src/js/index.js",
     "isEntry": true,
     "css": [
-      "assets/app-qcfnUff2.css"
+      "assets/app-DMHPgmz7.css"
     ],
-    "integrity": "sha384-SlDAVnGOFhGT4qjooXJErTANrSyxBOkUJaKOoy0+WgeXhJo6D4cOmzC7Wl3I64ky"
+    "assets": [
+      "assets/Figtree-latin-ext-DCwSJGxG.woff2",
+      "assets/Figtree-D_ZTVpCC.woff2",
+      "assets/Figtree-Italic-latin-ext-Q0qr0lrZ.woff2",
+      "assets/Figtree-Italic-BEAWuiTz.woff2",
+      "assets/Parkinsans-latin-ext-CTfSnvlK.woff2",
+      "assets/Parkinsans-mRuZnjHQ.woff2",
+      "assets/masterclass-mobile-D9tLKyrf.webp",
+      "assets/masterclass-desktop-DIL_y29Q.webp"
+    ],
+    "integrity": "sha384-L2yp8UFzHb1WEFzjQalHFGLwYCbbwJrT51QqFnGNrpzBLX4I8bDx6Bx3Z93ywedj"
+  },
+  "web/assets/img/masterclass-desktop.webp": {
+    "file": "assets/masterclass-desktop-DIL_y29Q.webp",
+    "src": "web/assets/img/masterclass-desktop.webp",
+    "integrity": "sha384-VNJUmPs+lfE0UIk/dV2a+tYlzag+o9ofbjPnRsnujqNQ85LcjGCReNE2CuNt58zM"
+  },
+  "web/assets/img/masterclass-mobile.webp": {
+    "file": "assets/masterclass-mobile-D9tLKyrf.webp",
+    "src": "web/assets/img/masterclass-mobile.webp",
+    "integrity": "sha384-TT7WekZA/tgQQWb8m5Rpn8IQqojl9zqEKdcNm+KIUnKN/kFrZ9265WZeP9vhLvNI"
   }
 }

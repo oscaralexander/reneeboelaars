@@ -11,7 +11,7 @@
     }
 
     .section__inner {
-        background-image: url('/assets/img/masterclass-mobile.webp') !important;
+        background-image: url('@web/assets/img/masterclass-mobile.webp') !important;
         background-size: 100% !important;
         background-position: top left !important;
         background-repeat: no-repeat !important;
@@ -43,7 +43,7 @@
 
     @include screen-min(l) {
         .section__inner {
-            background-image: url('/assets/img/masterclass-desktop.webp') !important;
+            background-image: url('@web/assets/img/masterclass-desktop.webp') !important;
             background-size: 75% !important;
         }
     }

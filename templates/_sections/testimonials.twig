@@ -57,10 +57,10 @@
                                     <span id="{{ showMoreId }}-truncated">
                                         {{ truncated }}{% if wordCount > 100 %}&hellip;{% endif %}
                                         {% if wordCount > truncateWords %}
-                                            <a class="testimonialAlt__moreLink" href="javascript:void(0);" onclick="
+                                            <span class="testimonialAlt__more" onclick="
                                                 document.getElementById('{{ showMoreId }}-truncated').style.display='none';
                                                 document.getElementById('{{ showMoreId }}-full').style.display='block';
-                                            ">Lees meer</a>
+                                            ">Lees meer</span>
                                         {% endif %}
                                     </span>
                                     {% if wordCount > truncateWords %}

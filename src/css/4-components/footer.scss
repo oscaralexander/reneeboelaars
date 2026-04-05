@@ -58,23 +58,23 @@
         }
 
         &--instagram {
-            mask-image: url('/assets/icons/instagram.svg');
+            mask-image: url('@web/assets/icons/instagram.svg');
         }
 
         &--linkedin {
-            mask-image: url('/assets/icons/linkedin.svg');
+            mask-image: url('@web/assets/icons/linkedin.svg');
         }
 
         &--spotify {
-            mask-image: url('/assets/icons/spotify.svg');
+            mask-image: url('@web/assets/icons/spotify.svg');
         }
 
         &--whatsapp {
-            mask-image: url('/assets/icons/whatsapp.svg');
+            mask-image: url('@web/assets/icons/whatsapp.svg');
         }
 
         &--x {
-            mask-image: url('/assets/icons/x.svg');
+            mask-image: url('@web/assets/icons/x.svg');
         }
     }
 

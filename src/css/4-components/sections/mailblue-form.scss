@@ -1,7 +1,7 @@
 .mailblueForm {
     &__form {
         form[id^="_form_"]._inline-form {
-            background-image: url('/assets/img/wh.png') !important;
+            background-image: url('@web/assets/img/wh.png') !important;
             margin: 0 !important;
             padding: 0 !important;
 
