@@ -27,8 +27,10 @@
                                             {% case 'image' %}
                                                 {% set image = item.image.one() %}
                                                 <img
-                                                    alt="{{ image.alt }}">
+                                                    alt="{{ image.alt }}"
+                                                    class="ticker__image"
                                                     height="{{ image.height }}"
+                                                    loading="lazy"
                                                     src="{{ image.getUrl({ format: 'webp', width: 800 }) }}"
                                                     style="aspect-ratio: {{ image.width }} / {{ image.height }};"
                                                     width="{{ image.width }}"
