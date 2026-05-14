@@ -27,7 +27,7 @@
                                             {% case 'image' %}
                                                 {% set image = item.image.one() %}
                                                 <img
-                                                    alt="{{ image.alt }}"
+                                                    alt="{{ image.title }}"
                                                     class="ticker__image"
                                                     height="{{ image.height }}"
                                                     loading="lazy"

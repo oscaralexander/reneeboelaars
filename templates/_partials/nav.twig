@@ -31,7 +31,11 @@
                     {% set navPages = craft.entries().section('pages').level(1).includeInNav(true).all() %}
                     {% for page in navPages %}
                         <li class="menu__item">
-                            <a class="menu__link" href="{{ page.url }}" role="menuitem">{{ page.title }}</a>
+                            {% if page.hasDescendants %}
+                                <span class="menu__link">{{ page.title }}</span>
+                            {% else %}
+                                <a class="menu__link" href="{{ page.url }}" role="menuitem">{{ page.title }}</a>
+                            {% endif %}
                             {% if page.children.includeInNav(true)|length %}
                                 <ul class="menu__submenu" role="submenu">
                                     {% for child in page.children.includeInNav(true) %}

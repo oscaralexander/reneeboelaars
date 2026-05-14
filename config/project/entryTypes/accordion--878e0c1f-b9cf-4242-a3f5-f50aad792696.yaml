@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2026-01-20T13:32:31+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -54,6 +56,7 @@ fieldLayouts:
             dateAdded: '2026-01-20T13:32:31+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
             instructions: null
@@ -66,9 +69,26 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-05-14T08:44:32+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6273045-0fc9-4983-80f5-89115a26f83f
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2026-01-20T13:32:31+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c2a9c26f-00ce-4a49-bfc5-cba5d23652f3 # Accordion Items
             handle: null
             instructions: null
@@ -90,6 +110,7 @@ fieldLayouts:
             dateAdded: '2026-01-20T14:01:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -105,6 +126,7 @@ fieldLayouts:
             dateAdded: '2026-01-20T14:01:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
             handle: null
             instructions: null
@@ -119,6 +141,7 @@ fieldLayouts:
         name: Styling
         uid: d3178dad-69bc-4b67-a07c-47f21f61d844
         userCondition: null
+    thumbFieldKey: null
 handle: accordion
 hasTitleField: true
 icon: null
@@ -130,3 +153,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

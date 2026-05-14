@@ -4,8 +4,7 @@
             <div class="grid__col l:grid__col--span-6">
                 <div class="masterclass__content">
                     <div class="stack stack--gap-m">
-                        <h5 class="section__eyebrow">{{ section.eyebrow }}</h5>
-                        <h2 class="textSplit js-textSplit">{{ section.title }}</h2>
+                        {% include '_partials/sectionHeader' with { section: section } %}
                         <div class="richText">
                             {{ section.richText }}
                         </div>

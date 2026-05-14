@@ -5,6 +5,7 @@ entryTypes:
     uid: 3e1663c4-d2fa-4d1c-b661-5f6fdc4a8055 # Person
 handle: people
 maxAuthors: 1
+minAuthors: 1
 name: People
 previewTargets:
   -

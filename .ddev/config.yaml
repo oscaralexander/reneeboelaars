@@ -1,16 +1,16 @@
 name: renee
 type: craftcms
 docroot: web
-php_version: "8.3"
+php_version: '8.4'
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
 database:
     type: mysql
-    version: "8.0"
+    version: '8.0'
 use_dns_when_possible: true
-composer_version: "2"
+composer_version: '2'
 web_environment: []
 corepack_enable: false
 web_extra_exposed_ports:
@@ -19,7 +19,6 @@ web_extra_exposed_ports:
       http_port: 5172
       https_port: 5173
 disable_upload_dirs_warning: true
-
 # Key features of DDEV's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides

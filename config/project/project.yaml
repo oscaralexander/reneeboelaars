@@ -1,4 +1,4 @@
-dateModified: 1775123833
+dateModified: 1778760921
 elementSources:
   craft\elements\Entry:
     -
@@ -154,7 +154,6 @@ meta:
     447f28a6-2439-4093-82cd-6125f73e4654: 'Full-width section?' # Full-width section?
     0483a197-c381-43d6-8e7d-f74489632241: 'Use parallax effect on images?' # Use parallax effect on images?
     692ce4fc-23b7-44b2-85a5-bab07af1139b: Text # Text
-    727a2a7f-ddaf-4d33-bf95-18a127e23966: Blog # Blog
     780fc932-f433-4460-9912-b6b95678600f: Blogs # Blogs
     825a0042-356f-4be8-9423-d4242dfb57ed: 'VAT ID' # VAT ID
     876fd15c-0530-4b9a-a606-fd551243dc02: 'Accordion Item' # Accordion Item
@@ -205,7 +204,6 @@ meta:
     c716490a-fb42-4ca1-9579-64274cca2df6: Color # Color
     caf77d6d-ca93-498f-b7f2-e38a96563691: Sitemap # Sitemap
     cbafe277-e6eb-4635-b326-7043b1e0f8a0: 'Section header alignment' # Section header alignment
-    cbbe32ae-1916-4a49-bc7e-e378ce595731: Simple # Simple
     cf16f708-96c3-4f9c-8d90-35b60350d138: 'Embed code' # Embed code
     d9d07fc4-9677-4550-b080-2a25872689be: 'Text & Media' # Text & Media
     d45931f4-1742-430b-b487-1c2c4ebe702f: 'Link to page' # Link to page
@@ -223,12 +221,16 @@ plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.6.0.0
   craftagram:
     edition: standard
     enabled: true
     licenseKey: XLP4PEGA0TGQZK5UWMWTLX1N
     schemaVersion: 3.0.0
+  mcp:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   vite:
     edition: standard
     enabled: true
@@ -238,7 +240,7 @@ system:
   live: true
   name: 'Renee Boelaars'
   retryDuration: null
-  schemaVersion: 5.9.0.8
+  schemaVersion: 5.10.0.0
   timeZone: Europe/Amsterdam
 users:
   allowPublicRegistration: false

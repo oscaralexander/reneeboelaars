@@ -5,19 +5,13 @@ entryTypes:
     uid: 0d6772dd-d5bb-41e6-a5fa-3ed12a345861 # Blog
 handle: blogs
 maxAuthors: 1
+minAuthors: 1
 name: Blogs
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars

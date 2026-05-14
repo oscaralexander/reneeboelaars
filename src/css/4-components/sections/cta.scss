@@ -18,6 +18,11 @@
         font-size: var(--font-size-xxl);
     }
 
+    &__text {
+        max-width: 65ch;
+        margin: auto;
+    }
+
     &__cta {
         .ctas {
             justify-content: center;

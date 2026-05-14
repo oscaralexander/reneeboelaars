@@ -5,19 +5,13 @@ entryTypes:
     uid: 09e44c40-286c-4a43-aebc-3a92d572e6fc # Page
 handle: pages
 maxAuthors: 1
+minAuthors: 1
 name: Pages
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   67aabd95-1a33-42f9-8870-0d419b6007ab: # Renee Boelaars

@@ -2,7 +2,12 @@
     <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
         <div class="grid grid--center grid--gap-xxl">
             <div class="grid__col l:grid__col--span-6">
-                {% include '_partials/sectionHeader' with { section: section } %}
+                <div class="stack stack--gap-xl">
+                    {% include '_partials/sectionHeader' with { section: section } %}
+                    {% if section.ctas %}
+                        {% include '_partials/ctas' with { ctas: section.ctas } %}
+                    {% endif %}
+                </div>
             </div>
             <div class="grid__col l:grid__col--span-6">
                 <div class="accordion__items">
@@ -14,7 +19,9 @@
                                 class="accordionItem__toggle js-accordionItemToggle"
                                 type="button"
                             >
-                                <h5 class="accordionItem__eyebrow">{{ item.eyebrow }}</h5>
+                                {% if item.eyebrow %}
+                                    <h5 class="accordionItem__eyebrow">{{ item.eyebrow }}</h5>
+                                {% endif %}
                                 <h3 class="accordionItem__title">{{ item.title }}</h3>
                             </button>
                             <div aria-labelledby="accordion-item-{{ item.id }}" class="accordionItem__content" role="region">

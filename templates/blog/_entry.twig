@@ -104,8 +104,8 @@
                 <div class="grid grid--gap-xxl">
                     <div class="grid__col l:grid__col--span-8">
                         <div class="blog__body">
-                            {% for block in entry.body.all() %}
-                                {% include "_body/" ~ block.type with { section: section } %}
+                            {% for block in entry.body.status(null).all() %}
+                                {% include "_body/" ~ block.type %}
                             {% endfor %}
                         </div>
                     </div>

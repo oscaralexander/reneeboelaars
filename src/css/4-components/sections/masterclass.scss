@@ -1,6 +1,8 @@
 @use '@css/2-tools/mixins' as *;
 
-.masterclass {   
+.masterclass {
+    margin: calc(var(--section-padding-y) * .5) 0;
+
     &__form {
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
         border-radius: 1rem;
@@ -15,10 +17,6 @@
         background-size: 100% !important;
         background-position: top left !important;
         background-repeat: no-repeat !important;
-    }
-
-    .section__eyebrow {
-        color: #FFF;
     }
 
     &__content,

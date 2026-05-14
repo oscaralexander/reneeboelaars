@@ -17,6 +17,10 @@
         justify-content: space-between;
         transition: var(--duration-s);
 
+        &:is(span) {
+            cursor: default;
+        }
+
         &:hover {
             color: var(--nav-color-link-hover);
         }
