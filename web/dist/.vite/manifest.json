@@ -30,12 +30,12 @@
     "integrity": "sha384-7DjR09oNU7RgYLtVWEJn+tYTgARcP5jwWzu7tblONjLED56dBZ6dLAvrq9VW3MLy"
   },
   "src/js/index.js": {
-    "file": "assets/app-BEwriMcH.js",
+    "file": "assets/app-BZbrPWLQ.js",
     "name": "app",
     "src": "src/js/index.js",
     "isEntry": true,
     "css": [
-      "assets/app-C4ZfugKo.css"
+      "assets/app-DIb2JZ_l.css"
     ],
     "assets": [
       "assets/Figtree-latin-ext-DCwSJGxG.woff2",
@@ -47,7 +47,7 @@
       "assets/masterclass-mobile-D9tLKyrf.webp",
       "assets/masterclass-desktop-DIL_y29Q.webp"
     ],
-    "integrity": "sha384-UCUfCOeBmFYNs/4XYF57ijej24gxRHyXgh5chaGA6PhPPWluJKKsMXgAIejhMyDo"
+    "integrity": "sha384-0OxQzw1FUtmixRwTbfelYE7vTI9I9GsEgQhkYdeyCXm1A8wqqbOD5P8DH1GrF0ks"
   },
   "web/assets/img/masterclass-desktop.webp": {
     "file": "assets/masterclass-desktop-DIL_y29Q.webp",

@@ -1,4 +1,4 @@
-dateModified: 1778760921
+dateModified: 1778763387
 elementSources:
   craft\elements\Entry:
     -
@@ -242,10 +242,3 @@ system:
   retryDuration: null
   schemaVersion: 5.10.0.0
   timeZone: Europe/Amsterdam
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: bf91fe54-3286-4f7e-819d-ed8ffa367552 # Users
-  require2fa: false
-  requireEmailVerification: true
