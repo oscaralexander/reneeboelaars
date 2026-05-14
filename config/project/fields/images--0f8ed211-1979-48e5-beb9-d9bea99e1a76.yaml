@@ -22,7 +22,6 @@ settings:
   restrictedLocationSource: 'volume:ad16611e-9a20-4be7-9b3f-f74408342afc' # Media
   restrictedLocationSubpath: blog
   selectionLabel: 'Add an image'
-  showCardsInGrid: false
   showSearchInput: false
   showSiteMenu: true
   showUnpermittedFiles: false
@@ -31,7 +30,7 @@ settings:
     - 'volume:ad16611e-9a20-4be7-9b3f-f74408342afc' # Media
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: large
+  viewMode: thumbs
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Assets

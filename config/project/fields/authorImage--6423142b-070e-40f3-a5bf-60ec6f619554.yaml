@@ -23,7 +23,6 @@ settings:
   restrictedLocationSource: 'volume:06a7d928-2733-422b-874c-28f8c2284edb' # Testimonials
   restrictedLocationSubpath: null
   selectionLabel: 'Add a photo'
-  showCardsInGrid: false
   showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false

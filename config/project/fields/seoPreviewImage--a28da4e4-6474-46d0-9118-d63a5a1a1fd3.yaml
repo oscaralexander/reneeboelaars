@@ -23,7 +23,6 @@ settings:
   restrictedLocationSource: 'volume:a4c6009f-3a59-4812-80c1-5b2ebf8fa5c8' # SEO
   restrictedLocationSubpath: null
   selectionLabel: 'Add a preview image'
-  showCardsInGrid: false
   showSearchInput: true
   showSiteMenu: false
   showUnpermittedFiles: false

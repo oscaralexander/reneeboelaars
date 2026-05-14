@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T17:10:26+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -54,6 +56,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T17:10:26+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
             instructions: null
@@ -69,6 +72,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T17:10:26+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7f0916da-3baa-459b-b8f1-73c6d5309464 # Cards
             handle: null
             instructions: null
@@ -90,6 +94,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T17:10:26+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -105,6 +110,7 @@ fieldLayouts:
             dateAdded: '2026-01-21T13:54:28+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
             handle: null
             instructions: null
@@ -120,6 +126,7 @@ fieldLayouts:
             dateAdded: '2025-07-22T08:44:21+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a8a676aa-bcc6-42ec-b632-4e909293a1ab # Apply theme color to
             handle: null
             instructions: null
@@ -135,6 +142,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T17:10:26+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cbafe277-e6eb-4635-b326-7043b1e0f8a0 # Section header alignment
             handle: null
             instructions: null
@@ -149,6 +157,7 @@ fieldLayouts:
         name: Styling
         uid: 184ce1d8-aeca-4eba-939e-91cb0e60b969
         userCondition: null
+    thumbFieldKey: null
 handle: cards
 hasTitleField: true
 icon: null
@@ -160,3 +169,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -9,6 +9,7 @@ fieldLayouts:
             dateAdded: '2025-10-17T12:09:24+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
             instructions: null
@@ -23,6 +24,7 @@ fieldLayouts:
         name: Navigation
         uid: c699e0ac-527d-4e7d-b276-a917ba1ac2f0
         userCondition: null
+    thumbFieldKey: null
 handle: navigation
 name: Navigation
 sortOrder: 4

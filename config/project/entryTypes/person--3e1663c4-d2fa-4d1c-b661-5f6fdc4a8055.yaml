@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-10-16T14:27:53+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e6eb655a-2769-4d93-81d4-9f3c7dac146d # Photo
             handle: null
             instructions: null
@@ -54,6 +56,7 @@ fieldLayouts:
             dateAdded: '2025-10-16T14:24:05+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: company
             instructions: null
@@ -69,6 +72,7 @@ fieldLayouts:
             dateAdded: '2025-10-16T14:24:05+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: position
             instructions: null
@@ -84,6 +88,7 @@ fieldLayouts:
             dateAdded: '2025-10-17T08:14:45+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: location
             instructions: 'e.g. Stavanger, Norway'
@@ -99,6 +104,7 @@ fieldLayouts:
             dateAdded: '2025-10-17T11:30:46+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: d45931f4-1742-430b-b487-1c2c4ebe702f # Link to page
             handle: null
             instructions: null
@@ -113,6 +119,7 @@ fieldLayouts:
         name: Content
         uid: 1e7a2b49-975a-4e76-92bb-1fdc40b87bf6
         userCondition: null
+    thumbFieldKey: null
 handle: person
 hasTitleField: true
 icon: null
@@ -124,3 +131,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

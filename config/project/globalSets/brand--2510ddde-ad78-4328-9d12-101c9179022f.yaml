@@ -9,6 +9,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T12:08:14+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a46dbf22-93c5-4217-aab8-633d286f778f # Logo
             handle: logoNav
             instructions: null
@@ -24,6 +25,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T19:40:23+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a46dbf22-93c5-4217-aab8-633d286f778f # Logo
             handle: logoFooter
             instructions: null
@@ -39,6 +41,7 @@ fieldLayouts:
             dateAdded: '2025-07-16T10:05:06+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: footerText
             instructions: null
@@ -54,6 +57,7 @@ fieldLayouts:
             dateAdded: '2025-08-02T18:33:25+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a28da4e4-6474-46d0-9118-d63a5a1a1fd3 # Preview Image
             handle: null
             instructions: null
@@ -68,6 +72,7 @@ fieldLayouts:
         name: Brand
         uid: c5ec56cc-9fc0-4ea9-a281-acbe40ae59ba
         userCondition: null
+    thumbFieldKey: null
 handle: brand
 name: Brand
 sortOrder: 1

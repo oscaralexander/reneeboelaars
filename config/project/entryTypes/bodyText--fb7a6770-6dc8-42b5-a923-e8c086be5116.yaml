@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-07-26T15:16:07+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 9fcbb220-b697-4379-81b5-e781f9068c61 # Blog text
             handle: text
             instructions: null
@@ -25,6 +27,7 @@ fieldLayouts:
         name: Content
         uid: fea91c8a-1ee1-49b6-bb4e-0c9ef32b9282
         userCondition: null
+    thumbFieldKey: null
 handle: bodyText
 hasTitleField: false
 icon: null
@@ -36,3 +39,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

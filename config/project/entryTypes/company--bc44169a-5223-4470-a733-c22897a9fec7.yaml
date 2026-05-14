@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -39,6 +40,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T07:18:52+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0c4407ce-b664-4df6-b4b4-bda67b701639 # Website URL
             handle: null
             instructions: null
@@ -54,6 +56,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T07:21:15+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a46dbf22-93c5-4217-aab8-633d286f778f # Logo
             handle: null
             instructions: null
@@ -68,6 +71,7 @@ fieldLayouts:
         name: Content
         uid: 16ff3a62-26e6-4583-b06d-a1cb4c39161a
         userCondition: null
+    thumbFieldKey: null
 handle: company
 hasTitleField: true
 icon: null
@@ -79,3 +83,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

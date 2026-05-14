@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-10-13T08:54:48+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -54,6 +56,7 @@ fieldLayouts:
             dateAdded: '2025-10-13T08:54:48+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
             instructions: null
@@ -69,6 +72,7 @@ fieldLayouts:
             dateAdded: '2025-10-13T08:58:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 00fd1296-dab2-47cb-b4cf-bcdc53f922e3 # Stats
             handle: null
             instructions: null
@@ -90,6 +94,7 @@ fieldLayouts:
             dateAdded: '2025-10-13T08:54:48+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -105,6 +110,7 @@ fieldLayouts:
             dateAdded: '2025-10-13T08:54:48+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
             handle: null
             instructions: null
@@ -119,6 +125,7 @@ fieldLayouts:
         name: Styling
         uid: 08941212-c34f-445c-8de8-a295d12c463f
         userCondition: null
+    thumbFieldKey: null
 handle: stats
 hasTitleField: true
 icon: null
@@ -130,3 +137,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

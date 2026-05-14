@@ -23,7 +23,6 @@ settings:
   restrictedLocationSource: 'volume:ad16611e-9a20-4be7-9b3f-f74408342afc' # Media
   restrictedLocationSubpath: null
   selectionLabel: 'Add an image'
-  showCardsInGrid: false
   showSearchInput: false
   showSiteMenu: false
   showUnpermittedFiles: false

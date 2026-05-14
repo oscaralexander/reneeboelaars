@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T12:23:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
             instructions: null
@@ -26,6 +28,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T12:23:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -69,6 +72,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T12:23:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: null
             instructions: null
@@ -84,6 +88,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T12:23:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
             instructions: 'Add a single CTA to make the entire card clickable.'
@@ -98,6 +103,7 @@ fieldLayouts:
         name: Content
         uid: 25cce3ad-61b8-405c-bdad-0a1ddc3bf440
         userCondition: null
+    thumbFieldKey: null
 handle: card
 hasTitleField: true
 icon: null
@@ -109,3 +115,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

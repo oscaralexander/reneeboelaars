@@ -38,6 +38,7 @@ fieldLayouts:
         name: Content
         uid: ed9ee6fa-302f-4862-9487-9747cf3967e7
         userCondition: null
+    thumbFieldKey: null
 fs: local
 handle: testimonials
 name: Testimonials

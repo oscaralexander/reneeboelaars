@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -13,6 +14,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T07:29:19+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -56,6 +58,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T11:31:41+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
             instructions: null
@@ -71,6 +74,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T06:44:29+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: text
             instructions: null
@@ -86,6 +90,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T06:44:29+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
             instructions: null
@@ -101,6 +106,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T06:44:29+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5b484456-92a8-451b-8bfc-e8cac4909a50 # Text position
             handle: null
             instructions: null
@@ -116,6 +122,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T06:59:21+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
             instructions: null
@@ -131,6 +138,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T06:59:21+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7fb3092f-696c-450f-afe9-b1d80dd29718 # YouTube Video ID
             handle: null
             instructions: null
@@ -152,6 +160,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T07:08:12+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -167,6 +176,7 @@ fieldLayouts:
             dateAdded: '2025-07-25T08:03:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
             handle: null
             instructions: null
@@ -182,6 +192,7 @@ fieldLayouts:
             dateAdded: '2026-01-28T10:37:18+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: aae9646c-8e25-477e-859a-0f755efbfcda # Media sticks to top?
             handle: null
             instructions: null
@@ -208,3 +219,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

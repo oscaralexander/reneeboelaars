@@ -38,6 +38,7 @@ fieldLayouts:
         name: Content
         uid: b98a9fa9-f2a8-4d33-9c65-96db6b4ef45d
         userCondition: null
+    thumbFieldKey: null
 fs: local
 handle: media
 name: Media

@@ -38,6 +38,7 @@ fieldLayouts:
         name: Content
         uid: f95262f4-c315-4067-a2bf-b83e06820aeb
         userCondition: null
+    thumbFieldKey: null
 fs: local
 handle: seo
 name: SEO

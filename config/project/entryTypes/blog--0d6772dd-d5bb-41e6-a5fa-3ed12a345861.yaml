@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -39,6 +40,7 @@ fieldLayouts:
             dateAdded: '2025-07-31T15:32:24+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a7a8daf6-7f51-497e-87c8-1dfee48440fc # Textarea
             handle: summary
             instructions: 'A summary of the article, also used for SEO and social media previews.'
@@ -54,6 +56,7 @@ fieldLayouts:
             dateAdded: '2025-07-30T09:30:18+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: bdafabfc-3fd4-4308-8715-00d9cd86f085 # Image
             handle: null
             instructions: null
@@ -69,6 +72,7 @@ fieldLayouts:
             dateAdded: '2025-07-25T13:19:21+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0ab5213d-4f1d-4247-bb3a-9f6b7867dac5 # Body
             handle: null
             instructions: null
@@ -83,6 +87,7 @@ fieldLayouts:
         name: Content
         uid: 518ebe35-5489-4674-8d20-dbdcb7355a4d
         userCondition: null
+    thumbFieldKey: null
 handle: blog
 hasTitleField: true
 icon: null
@@ -94,3 +99,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

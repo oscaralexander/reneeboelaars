@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T16:29:17+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -26,6 +28,7 @@ fieldLayouts:
             dateAdded: '2025-07-25T09:42:11+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
             handle: null
             instructions: null
@@ -41,6 +44,7 @@ fieldLayouts:
             dateAdded: '2025-07-15T09:34:54+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cbafe277-e6eb-4635-b326-7043b1e0f8a0 # Section header alignment
             handle: null
             instructions: null
@@ -56,6 +60,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T12:47:52+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c716490a-fb42-4ca1-9579-64274cca2df6 # Color
             handle: null
             instructions: null
@@ -71,6 +76,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T12:12:43+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -114,6 +120,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T12:09:21+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
             instructions: null
@@ -129,6 +136,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T12:19:57+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 45b27572-33f7-4ecb-9e2b-43bad0388805 # Columns
             handle: null
             instructions: null
@@ -143,6 +151,7 @@ fieldLayouts:
         name: Content
         uid: d0dd6f48-ce2a-4cdc-8c72-1955786501f2
         userCondition: null
+    thumbFieldKey: null
 handle: columns
 hasTitleField: true
 icon: null
@@ -154,3 +163,4 @@ slugTranslationMethod: site
 titleFormat: '{heading}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

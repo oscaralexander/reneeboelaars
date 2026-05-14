@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -13,6 +14,7 @@ fieldLayouts:
             dateAdded: '2025-12-22T09:53:00+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: body
             instructions: null
@@ -28,6 +30,7 @@ fieldLayouts:
             dateAdded: '2025-12-18T13:37:47+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: pullQuote
             instructions: null
@@ -71,6 +74,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T08:26:58+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: authorCompany
             instructions: null
@@ -86,6 +90,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T08:25:54+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c4dec5a2-c82d-4380-8041-f483d7febbb0 # Text
             handle: authorPosition
             instructions: null
@@ -101,6 +106,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T08:25:54+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 6423142b-070e-40f3-a5bf-60ec6f619554 # Author image
             handle: null
             instructions: null
@@ -127,3 +133,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

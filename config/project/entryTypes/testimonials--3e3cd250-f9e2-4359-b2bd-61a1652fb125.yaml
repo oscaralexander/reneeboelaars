@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -11,6 +12,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T08:11:55+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -26,6 +28,7 @@ fieldLayouts:
             dateAdded: '2025-07-25T10:09:08+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cbafe277-e6eb-4635-b326-7043b1e0f8a0 # Section header alignment
             handle: null
             instructions: null
@@ -69,6 +72,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T08:11:55+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: intro
             instructions: null
@@ -84,6 +88,7 @@ fieldLayouts:
             dateAdded: '2025-07-21T08:11:55+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 282e9005-dbc2-492c-ab72-d44ef796c4b3 # Testimonials
             handle: null
             instructions: null
@@ -98,6 +103,7 @@ fieldLayouts:
         name: Content
         uid: 62e580f2-e403-46e6-a3c7-ee90d4170964
         userCondition: null
+    thumbFieldKey: null
 handle: testimonials
 hasTitleField: true
 icon: null
@@ -109,3 +115,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

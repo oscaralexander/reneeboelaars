@@ -38,6 +38,7 @@ fieldLayouts:
         name: Content
         uid: 9401400b-f644-4c73-ad39-3d5f1de825e6
         userCondition: null
+    thumbFieldKey: null
 fs: local
 handle: logos
 name: Logos

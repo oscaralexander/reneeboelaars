@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -24,6 +25,7 @@ fieldLayouts:
                   value: ''
               elementType: craft\elements\Entry
               fieldContext: global
+            elementEditCondition: null
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
             instructions: null
@@ -49,6 +51,7 @@ fieldLayouts:
                   uid: f0612dbb-13c6-49c1-83aa-8c6aae176e76
               elementType: craft\elements\Entry
               fieldContext: global
+            elementEditCondition: null
             fieldUid: 9e7ef0ca-bdf6-434e-9bcd-15b5f508d201 # Icon
             handle: null
             instructions: null
@@ -74,6 +77,7 @@ fieldLayouts:
                   uid: 6201dea0-78aa-48fb-bb5e-84b17b15dfb5
               elementType: craft\elements\Entry
               fieldContext: global
+            elementEditCondition: null
             fieldUid: c716490a-fb42-4ca1-9579-64274cca2df6 # Color
             handle: iconColor
             instructions: null
@@ -117,6 +121,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T12:19:54+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: text
             instructions: null
@@ -132,6 +137,7 @@ fieldLayouts:
             dateAdded: '2025-07-14T12:19:54+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
             instructions: null
@@ -158,3 +164,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

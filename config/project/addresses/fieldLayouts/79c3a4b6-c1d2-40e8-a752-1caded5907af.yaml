@@ -23,7 +23,7 @@ tabs:
         orientation: null
         placeholder: null
         readonly: false
-        requirable: false
+        required: true
         size: null
         step: null
         tip: null
@@ -63,6 +63,7 @@ tabs:
         dateAdded: '2025-07-15T12:53:38+00:00'
         editCondition: null
         elementCondition: null
+        elementEditCondition: null
         fieldUid: b8a2fae7-8fc2-4ed9-9510-07d1bcccdacf # Google Maps URL
         handle: null
         instructions: null
@@ -77,3 +78,4 @@ tabs:
     name: Content
     uid: edb4d39c-2ec0-4979-abe0-ff6a974bf66d
     userCondition: null
+thumbFieldKey: null

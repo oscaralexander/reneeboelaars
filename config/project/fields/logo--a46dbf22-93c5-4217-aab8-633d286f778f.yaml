@@ -23,7 +23,6 @@ settings:
   restrictedLocationSource: 'volume:32a4a09f-6ff4-4cdc-9381-b3d086ddf5dc' # Logos
   restrictedLocationSubpath: null
   selectionLabel: 'Add a logo'
-  showCardsInGrid: false
   showSearchInput: true
   showSiteMenu: false
   showUnpermittedFiles: false

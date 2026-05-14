@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -13,6 +14,7 @@ fieldLayouts:
             dateAdded: '2025-10-16T09:43:46+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
             handle: null
             instructions: null
@@ -28,6 +30,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T16:10:57+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
             handle: null
             instructions: null
@@ -43,6 +46,7 @@ fieldLayouts:
             dateAdded: '2025-07-25T11:25:53+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 5f7e8cd7-6cc5-458f-90dc-7953a08ded99 # Text width
             handle: null
             instructions: null
@@ -86,6 +90,7 @@ fieldLayouts:
             dateAdded: '2025-07-08T17:26:04+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
             handle: text
             instructions: null
@@ -101,6 +106,7 @@ fieldLayouts:
             dateAdded: '2025-07-08T17:26:04+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: b29bda53-6fe5-4d47-843d-6325730133c3 # CTAs
             handle: null
             instructions: null
@@ -116,6 +122,7 @@ fieldLayouts:
             dateAdded: '2025-07-09T16:07:38+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: eeb05e24-d71b-40f4-a481-418b4f46ce71 # Height
             handle: null
             instructions: null
@@ -142,3 +149,4 @@ slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

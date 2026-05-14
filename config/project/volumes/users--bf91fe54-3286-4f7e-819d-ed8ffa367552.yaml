@@ -38,6 +38,7 @@ fieldLayouts:
         name: Content
         uid: c98194bf-3988-4d8c-8947-5e173020174f
         userCondition: null
+    thumbFieldKey: null
 fs: local
 handle: users
 name: Users

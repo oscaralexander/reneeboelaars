@@ -46,7 +46,7 @@ settings:
   pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
-  showCardsInGrid: true
+  showCardsInGrid: false
   viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
