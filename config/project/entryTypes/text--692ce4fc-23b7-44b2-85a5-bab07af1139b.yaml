@@ -13,38 +13,6 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: cbafe277-e6eb-4635-b326-7043b1e0f8a0 # Section header alignment
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 11b6be21-02d3-4f9e-bca2-f1dd36c6792f
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-07-15T10:52:55+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6b1af16e-1fe0-45ac-bc56-65ceb48a9cf1
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-07-15T10:52:55+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
             fieldUid: 80b3fe6d-fa96-4075-a87b-66e40195b590 # Eyebrow
             handle: null
             instructions: null
@@ -134,6 +102,60 @@ fieldLayouts:
             width: 100
         name: Content
         uid: 296083e8-d6e9-4da5-a832-350aced80f34
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-15T10:52:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 26acb532-e8a4-4e24-bd62-b79d3a7d5cd7 # Theme color
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b1af16e-1fe0-45ac-bc56-65ceb48a9cf1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-05-21T09:20:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 447f28a6-2439-4093-82cd-6125f73e4654 # Full-width section?
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bf1d173-d0f4-4c46-9f47-c41cc5760c63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-15T10:52:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cbafe277-e6eb-4635-b326-7043b1e0f8a0 # Section header alignment
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11b6be21-02d3-4f9e-bca2-f1dd36c6792f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Styling
+        uid: 8aa7ac22-a802-4eb3-80ea-e23a64bc8573
         userCondition: null
     thumbFieldKey: null
 handle: text

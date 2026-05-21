@@ -123,22 +123,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-07-22T08:44:21+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: a8a676aa-bcc6-42ec-b632-4e909293a1ab # Apply theme color to
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: db87d8ae-a1e7-40c9-a6b2-08f6f106c523
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2025-07-21T17:10:26+00:00'
             editCondition: null
             elementCondition: null
@@ -151,6 +135,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 6dadcf2f-f238-4ef3-b100-015cfae72fe4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-22T08:44:21+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a8a676aa-bcc6-42ec-b632-4e909293a1ab # Apply theme color to
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db87d8ae-a1e7-40c9-a6b2-08f6f106c523
             userCondition: null
             warning: null
             width: 100
