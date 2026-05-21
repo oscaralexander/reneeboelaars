@@ -4,17 +4,8 @@
     {% set people = craft.entries.section('people').all() %}
 {% endif %}
 
-{%
-    set classNames = [
-        'section',
-        'people',
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
-    ]|filter|join(' ')
-%}
-
 {% if people %}
-    <section class="{{ classNames }}">
+    <section class="section people {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %} js-equinox">
         <div class="wrapper section__inner u-theme-{{ section.theme ?? 0 }}">
             <div class="grid grid--gap-xxl">
                 {% if section.eyebrow or section.title or section.intro %}

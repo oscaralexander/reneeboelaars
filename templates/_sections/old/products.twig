@@ -1,16 +1,11 @@
 {% set products = section.products.all() %}
 
-{%
-    set classNames = [
-        'section',
-        'products',
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : '',
-    ]|filter|join(' ')
-%}
+{% if products is empty %}
+    {% set products = craft.entries.section('products').all() %}
+{% endif %}
 
 {% if products %}
-    <section class="{{ classNames }}">
+    <section class="section products {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %}">
         <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
             <div class="grid grid--gap-xxl">
                 <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">
@@ -36,7 +31,7 @@
                             <div class="grid__col {{ gridClassName }}">
                                 <div class="product">
                                     <div class="product__content">
-                                        <h4 class="product__title">{{ product.title }}</h4>
+                                        <h3 class="product__title">{{ product.title }}</h3>
                                         {% if product.price %}
                                             <div class="product__price">
                                                 {% if product.fromPrice %}

@@ -1,13 +1,4 @@
-{%
-    set classNames = [
-        'section',
-        'columns',
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
-    ]|filter|join(' ')
-%}
-
-<section class="{{ classNames }}">
+<section class="section columns {% if section.isFullWidth %}u-theme-{{ section.theme ?? 0 }}{% endif %}">
     <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme ?? '0' }}{% endif %}">
         <div class="grid grid--gap-xxl">
             {% if section.eyebrow is not empty or section.title is not empty or section.intro is not empty %}

@@ -1,16 +1,7 @@
 {% set cards = section.cards.all() %}
 
-{%
-    set classNames = [
-        'section',
-        'cards',
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
-    ]|filter|join(' ')
-%}
-
 {% if cards %}
-    <section class="{{ classNames }}">
+    <section class="section cards {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
         <div class="wrapper section__inner u-theme-{{ section.applyThemeTo == 'section' ? section.theme : '0' }}">
             <div class="grid grid--gap-xxl">
                 <div class="grid__col {% if section.sectionHeaderAlignment == 'left' %}l:grid__col--span-4{% endif %}">

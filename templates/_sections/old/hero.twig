@@ -1,18 +1,6 @@
 {% set image = section.image.one() %}
 
-{%
-    set classNames = [
-        'section',
-        'hero',
-        'hero--' ~ section.height ?? 'fit',
-        'hero--width-' ~ section.textWidth,
-        'u-theme-' ~ section.theme,
-        section.isFullWidth ? 'section--fullWidth' : '',
-        'js-equinox'
-    ]|filter|join(' ')
-%}
-
-<section class="{{ classNames }}">
+<section class="section hero hero--{{ section.height ?? 'fit' }} hero--width-{{ section.textWidth }} u-theme-{{ section.theme }} js-equinox">
     {% if image %}
         <img
             alt="{{ image.title }}"

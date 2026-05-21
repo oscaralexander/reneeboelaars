@@ -1,16 +1,7 @@
 {% set companies = craft.entries.section('companies').all() %}
 
-{%
-    set classNames = [
-        'section',
-        'companies',
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
-    ]|filter|join(' ')
-%}
-
 {% if companies is not empty %}
-    <section class="{{ classNames }}">
+    <section class="section companies {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
         <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
             {% include '_partials/sectionHeader' with { section: section, headerAlignment: 'top' } %}
             <div class="wrapper__outset companies__ticker">

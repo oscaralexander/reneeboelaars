@@ -3,4 +3,8 @@
     display: inline-flex;
     flex-wrap: wrap;
     gap: .75rem;
+
+    &--center {
+        justify-content: center;
+    }
 }

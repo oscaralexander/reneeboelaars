@@ -1,17 +1,12 @@
 {% set image = section.image.one() %}
-
-{%
-    set classNames = [
-        'section',
-        'textMedia',
-        'textMedia--' ~ section.textPosition,
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : '',
-        'js-equinox'
-    ]|filter|join(' ')
-%}
-
-<section class="{{ classNames }}">
+<section class="
+    section
+    textMedia
+    textMedia--{{ section.textPosition }}
+    textMedia--{{ section.isStickyMedia ? 'stickyMedia' : 'staticMedia' }}
+    {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}
+    js-equinox
+">
     {% if section.isFullWidth and image %}
         <picture class="textMedia__pictureLarge {% if settings.useParallax %}textMedia__pictureLarge--parallax{% endif %}">
             <source
@@ -47,7 +42,14 @@
         </picture>
     {% endif %}
     <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme }}{% endif %}">
-        <div class="grid grid--gap-xl grid--middle l:grid--gap-xxl {% if section.textPosition == 'right' %}l:grid--reverse{% endif %} textMedia__content">
+        <div class="
+            grid
+            grid--gap-xl
+            l:grid--gap-xxl
+            {% if section.isStickyMedia == false %}grid--middle{% endif %}
+            {% if section.textPosition == 'right' %}l:grid--reverse{% endif %}
+            textMedia__content
+        ">
             <div class="grid__col l:grid__col--span-6 textMedia__textCol">
                 <div class="textMedia__text stack stack--gap-l">
                     {% include '_partials/sectionHeader' with { section: section } %}

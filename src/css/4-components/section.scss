@@ -34,6 +34,12 @@
         margin-top: calc(var(--section-padding-y) * -.5);
     }
 
+    &--fullWidth {
+        .section__inner {
+            background: transparent !important;
+        }
+    }
+
     @include screen-max(l) {
         overflow: hidden;
     }

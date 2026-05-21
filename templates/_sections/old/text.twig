@@ -1,0 +1,17 @@
+<section class="section text {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %} js-equinox">
+    <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
+        <div class="grid grid--center grid--gap-xxl">
+            <div class="grid__col l:grid__col--span-{{ section.sectionHeaderAlignment == 'left' ? 6 : 8 }}">
+                {% include '_partials/sectionHeader' with { section: section } %}
+            </div>
+            <div class="grid__col l:grid__col--span-{{ section.sectionHeaderAlignment == 'left' ? 6 : 8 }}">
+                <div class="text__body richText">
+                    {{ section.text }}
+                </div>
+                {% if section.ctas %}
+                    {% include '_partials/ctas' with { ctas: section.ctas } %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
