@@ -1,4 +1,4 @@
-<div class="ctas">
+<div class="ctas {{ ctasClassNames ?? '' }}">
     {% for cta in ctas %}
         {% switch cta.type %}
             {% case 'button' %}
