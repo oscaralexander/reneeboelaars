@@ -61,11 +61,11 @@
                             </div>
                             <div class="testimonialAlt__text richText">
                                 {% set showMoreId = 'testimonialMore' ~ testimonial.id %}
-                                {% set truncated = testimonial.body|striptags|split(' ')|slice(0, truncateWords)|join(' ') %}
+                                {% set truncated = testimonial.body|replace('</div><p>', '#BR#')|striptags|split(' ')|slice(0, truncateWords)|join(' ')|replace('#BR#', '<br><br>') %}
                                 {% set wordCount = testimonial.body|striptags|split(' ')|length %}
                                 <div class="testimonialAlt__body">
-                                    <span id="{{ showMoreId }}-truncated">
-                                        {{ truncated }}{% if wordCount > 100 %}&hellip;{% endif %}
+                                    <span class="testimonialAlt__text--truncated" id="{{ showMoreId }}-truncated">
+                                        {{ truncated|raw }}{% if wordCount > 100 %}&hellip;{% endif %}
                                         {% if wordCount > truncateWords %}
                                             <span class="testimonialAlt__more" onclick="
                                                 document.getElementById('{{ showMoreId }}-truncated').style.display='none';
@@ -74,8 +74,8 @@
                                         {% endif %}
                                     </span>
                                     {% if wordCount > truncateWords %}
-                                        <span id="{{ showMoreId }}-full" style="display: none;">
-                                            {{ testimonial.body|raw }}
+                                        <span class="testimonialAlt__text--full" id="{{ showMoreId }}-full" style="display: none;">
+                                            {{ testimonial.body|replace('</p><p>', '<br><br>')|raw }}
                                         </span>
                                     {% endif %}
                                 </div>
