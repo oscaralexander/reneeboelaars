@@ -1,15 +1,7 @@
 {% set tickerItems = section.tickerItems.all() %}
 
-{%
-    set classNames = [
-        'section',
-        section.isFullWidth ? 'section--fullWidth' : '',
-        section.isFullWidth ? 'u-theme-' ~ section.theme : ''
-    ]|filter|join(' ')
-%}
-
 {% if tickerItems %}
-    <section class="{{ classNames }}">
+    <section class="section {% if section.isFullWidth %}u-theme-{{ section.theme }}{% endif %}">
         <div class="wrapper section__inner u-theme-{{ section.theme ?? '0' }}">
             {% include '_partials/sectionHeader' with { section: section, headerAlignment: 'top' } %}
             <div class="tickerSection__ticker wrapper__outset">
@@ -35,8 +27,10 @@
                                             {% case 'image' %}
                                                 {% set image = item.image.one() %}
                                                 <img
-                                                    alt="{{ image.alt }}">
+                                                    alt="{{ image.title }}"
+                                                    class="ticker__image"
                                                     height="{{ image.height }}"
+                                                    loading="lazy"
                                                     src="{{ image.getUrl({ format: 'webp', width: 800 }) }}"
                                                     style="aspect-ratio: {{ image.width }} / {{ image.height }};"
                                                     width="{{ image.width }}"

@@ -99,6 +99,72 @@
         }
     }
 
+    &__footer {
+        align-items: center;
+        border-top: 1px solid var(--color-border);
+        display: flex;
+        gap: var(--size-l);
+        margin-top: var(--size-xxl);
+        padding-top: var(--size-l);
+
+        &-authorImage {
+            border-radius: 50%;
+            height: 4rem;
+        }
+        
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: var(--size-xs);
+        }
+
+        &-authorBio {
+            line-height: var(--line-height-l);
+            font-size: var(--font-size-s);
+        }
+
+        &-icons {
+            align-items: center;
+            display: flex;
+            gap: .75rem;
+            margin-top: var(--size-m);
+        }
+
+        &-icon {
+            background-color: var(--color-link);
+            display: block;
+            height: 1.25rem;
+            mask-size: 100% 100%;
+            overflow: hidden;
+            text-indent: -9999px;
+            width: 1.25rem;
+    
+            &:hover {
+                background-color: var(--color-link-hover);
+            }
+    
+            &--instagram {
+                mask-image: url('@web/assets/icons/instagram.svg');
+            }
+    
+            &--linkedin {
+                mask-image: url('@web/assets/icons/linkedin.svg');
+            }
+    
+            &--spotify {
+                mask-image: url('@web/assets/icons/spotify.svg');
+            }
+    
+            &--whatsapp {
+                mask-image: url('@web/assets/icons/whatsapp.svg');
+            }
+    
+            &--x {
+                mask-image: url('@web/assets/icons/x.svg');
+            }
+        }
+    }
+
     @include screen-max(l) {
         &__header {
             &-content {
@@ -162,6 +228,12 @@
 
         &__author-image {
             height: 2.25rem;
+        }
+
+        &__footer {
+            &-authorImage {
+                height: 6rem;
+            }
         }
     }
 }

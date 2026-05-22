@@ -1,0 +1,23 @@
+{%
+    set classNames = [
+        'section',
+        'calendar',
+        section.isFullWidth ? 'section--fullWidth' : '',
+        section.isFullWidth ? 'u-theme-' ~ section.theme : '',
+    ]|filter|join(' ')
+%}
+
+<section class="{{ classNames }}">
+    <div class="wrapper section__inner {% if section.theme is not empty %}u-theme-{{ section.theme }}{% endif %}">
+        <div class="grid grid--gap-xl grid--middle l:grid--gap-xxl">
+            {% if section.eyebrow is not empty or section.title is not empty or section.intro is not empty %}
+                <div class="grid__col">
+                    {% include '_partials/sectionHeader' with { section: section, headerAlignment: 'top' } %}
+                </div>
+            {% endif %}
+            <div class="grid__col">
+                {{ section.embedCode|raw }}
+            </div>
+        </div>
+    </div>
+</section>

@@ -28,6 +28,14 @@ settings:
       __assoc__:
         -
           - uid
+          - 3ca21605-4ac4-41dd-aae3-618e726336c4 # Calendar
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 2ba1c57c-3cf0-40af-9276-7f085079ea8d # Call to Action
         -
           - group

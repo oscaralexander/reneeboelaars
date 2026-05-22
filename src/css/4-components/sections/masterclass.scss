@@ -3,6 +3,16 @@
 .masterclass {
     margin: calc(var(--section-padding-y) * .5) 0;
 
+    .section__eyebrow {
+        color: var(--color-text-hc);
+        opacity: .75;
+    }
+
+    .u-theme-inverted .section__eyebrow {
+        color: var(--color-bg);
+        opacity: .85;
+    }
+
     &__form {
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
         border-radius: 1rem;
