@@ -30,7 +30,7 @@
     "integrity": "sha384-7DjR09oNU7RgYLtVWEJn+tYTgARcP5jwWzu7tblONjLED56dBZ6dLAvrq9VW3MLy"
   },
   "src/js/index.js": {
-    "file": "assets/app-CVEvhLFS.js",
+    "file": "assets/app-BRbyhi7H.js",
     "name": "app",
     "src": "src/js/index.js",
     "isEntry": true,
@@ -47,7 +47,7 @@
       "assets/masterclass-mobile-D9tLKyrf.webp",
       "assets/masterclass-desktop-DIL_y29Q.webp"
     ],
-    "integrity": "sha384-1M+GMYebEa96qSh4/xszJ7FK08w8Pqp/o4kCxqduu/lKBRwC6e1QTHV/ogsgnVlx"
+    "integrity": "sha384-Y92M8M0vXXK3RDg7JA4PdnKEmJXRJrla2B6gnBUhQM18fxBfnhsXgBC8dD2KDbJl"
   },
   "web/assets/img/masterclass-desktop.webp": {
     "file": "assets/masterclass-desktop-DIL_y29Q.webp",

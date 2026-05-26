@@ -34,7 +34,7 @@
                             {% if page.hasDescendants %}
                                 <span class="menu__link">{{ page.title }}</span>
                             {% else %}
-                                <a class="menu__link" href="{{ page.url }}" role="menuitem">{{ page.title }}</a>
+                                <a class="menu__link" href="{{ page.slug == 'home' ? '/' : page.url }}" role="menuitem">{{ page.title }}</a>
                             {% endif %}
                             {% if page.children.includeInNav(true)|length %}
                                 <ul class="menu__submenu" role="submenu">
