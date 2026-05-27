@@ -9,6 +9,10 @@ import Ticker from '@js/components/Ticker';
 
 window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href]').forEach(link => {
+        const href = link.getAttribute('href');
+
+        if (!href || href.trim().startsWith('#')) return;
+
         try {
             const url = new URL(link.href);
 
