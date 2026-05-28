@@ -17,6 +17,17 @@ settings:
         -
           - default
           - '1'
+    -
+      __assoc__:
+        -
+          - color
+          - '#79dbb3'
+        -
+          - label
+          - Green
+        -
+          - default
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Color
