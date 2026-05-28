@@ -21,10 +21,8 @@
             <div class="grid__col l:grid__col--span-3">
                 <h2 class="footer__heading">Links</h2>
                 <ul class="footer__links">
-                    {% for page in craft.entries.section('pages').includeInNav(true).all() %}
-                        {% if not page.hasDescendants %}
-                            <li><a class="footer__link" href="{{ page.url }}">{{ page.title }}</a></li>
-                        {% endif %}
+                    {% for page in navigation.footerLinks.all() %}
+                        <li><a class="footer__link" href="{{ page.url }}">{{ page.title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

@@ -39,7 +39,8 @@ settings:
     - link
     - bulletedList
     - numberedList
-    - createEntry
+    - '|'
+    - sourceEditing
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

@@ -1,4 +1,4 @@
-dateModified: 1779453130
+dateModified: 1779959833
 elementSources:
   craft\elements\Entry:
     -
@@ -181,6 +181,7 @@ meta:
     a8a676aa-bcc6-42ec-b632-4e909293a1ab: 'Apply theme color to' # Apply theme color to
     a8b4b6c6-4b9d-426f-a21f-34a960809b80: Companies # Companies
     a28da4e4-6474-46d0-9118-d63a5a1a1fd3: 'Preview Image' # Preview Image
+    a35b12a3-9961-4afb-8ac6-215c2de4bb17: 'Footer links' # Footer links
     a46dbf22-93c5-4217-aab8-633d286f778f: Logo # Logo
     aae9646c-8e25-477e-859a-0f755efbfcda: 'Media sticks to top?' # Media sticks to top?
     ab0b17b8-81ef-4f1b-8f10-e466489940ed: Legal # Legal

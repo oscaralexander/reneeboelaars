@@ -21,6 +21,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2026-05-28T09:17:13+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a35b12a3-9961-4afb-8ac6-215c2de4bb17 # Footer links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03b4832d-5dc8-4b27-9b02-d1fc4ac24d54
+            userCondition: null
+            warning: null
+            width: 100
         name: Navigation
         uid: c699e0ac-527d-4e7d-b276-a917ba1ac2f0
         userCondition: null
