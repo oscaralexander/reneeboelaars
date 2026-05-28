@@ -58,9 +58,9 @@ fieldLayouts:
             elementCondition: null
             elementEditCondition: null
             fieldUid: af09463e-3ae3-4197-bfd8-a026dd7b3230 # Rich text
-            handle: null
+            handle: intro
             instructions: null
-            label: null
+            label: Intro
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
