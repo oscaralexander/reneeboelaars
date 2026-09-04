@@ -239,14 +239,29 @@ $sizes: (
         // Nav
         --nav-border-radius: 1rem;
         --nav-box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .1);
-        --nav-height: 8rem;
+        --nav-height: 4rem;
         --nav-offset-x: 1rem;
         --nav-offset-y: 1rem;
 
         // Logo
-        --logo-height: 6rem;
+        --logo-height: 2.5rem;
 
         // Footer
         --footer-logo-width: 8rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        // Font size
+        --font-size-xxl: 1.5rem;
+        --font-size-3xl: 2.75rem;
+        --font-size-4xl: 4rem;
+
+        // Logo
+        --logo-height: 5rem;
+
+        // Nav
+        --nav-height: 7rem;
     }
 }

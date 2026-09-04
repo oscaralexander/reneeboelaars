@@ -1,4 +1,5 @@
 {% set logo = brand.logoNav.one() %}
+{% set logoMobile = brand.logoNavMobile.one() %}
 
 <nav class="nav js-nav">
     <div class="nav__inner">
@@ -14,8 +15,13 @@
                 <div></div>
             </button>
             <a class="nav__logoLink" href="{{ siteUrl }}">
-                {% if logo %}
-                    <img alt="{{ currentSite.name }}" class="nav__logo" height="{{ logo.height }}" src="{{ logo.url }}" style="aspect-ratio: {{ logo.width ~ '/' ~ logo.height }};" width="{{ logo.width }}">
+                {% if logo or logoMobile %}
+                    {% if logoMobile %}
+                        <img alt="{{ currentSite.name }}" class="nav__logo nav__logo--desktop" height="{{ logo.height }}" src="{{ logo.url }}" style="aspect-ratio: {{ logo.width ~ '/' ~ logo.height }};" width="{{ logo.width }}">
+                        <img alt="{{ currentSite.name }}" class="nav__logo nav__logo--mobile" height="{{ logoMobile.height }}" src="{{ logoMobile.url }}" style="aspect-ratio: {{ logoMobile.width ~ '/' ~ logoMobile.height }};" width="{{ logoMobile.width }}">
+                    {% else %}
+                        <img alt="{{ currentSite.name }}" class="nav__logo" height="{{ logo.height }}" src="{{ logo.url }}" style="aspect-ratio: {{ logo.width ~ '/' ~ logo.height }};" width="{{ logo.width }}">
+                    {% endif %}
                 {% else %}
                     {{ currentSite.name }}
                 {% endif %}

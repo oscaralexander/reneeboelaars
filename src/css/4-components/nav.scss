@@ -47,7 +47,7 @@
         }
     }
 
-    @include screen-max(m) {
+    @include screen-max(l) {
         &__top {
             justify-content: center;
             padding: 0 calc(var(--gutter) - var(--nav-offset-x));
@@ -192,6 +192,14 @@
             }
         }
 
+        &__logo--mobile {
+            display: block;
+        }
+
+        &__logo--desktop {
+            display: none;
+        }
+
         &__cta {
             display: none;
         }
@@ -210,6 +218,14 @@
         &__menuOverlay,
         &__menuToggle {
             display: none;
+        }
+
+        &__logo--mobile {
+            display: none;
+        }
+
+        &__logo--desktop {
+            display: block;
         }
     }
 }

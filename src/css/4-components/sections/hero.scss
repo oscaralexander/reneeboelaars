@@ -20,15 +20,27 @@
     }
 
     &__backdrop {
-        bottom: 0;
+        display: block;
         position: absolute;
-        height: 125%;
         left: 0;
         object-fit: cover;
         position: absolute;
         transform: translate3d(0, calc(var(--equinox-pos) * 20%), 0);
         width: 100%;
         z-index: 1;
+
+        &--desktop {
+            bottom: 0;
+            display: none;
+            height: 125%;
+        }
+
+        &--mobile {
+            display: block;
+            mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
+            transform: translate3d(0, calc(var(--equinox) * -25%), 0);
+            top: 0;
+        }
     }
 
     &__content {
@@ -52,5 +64,25 @@
         color: var(--color-text-hc);
         font-size: var(--font-size-l);
         max-width: 40rem;
+    }
+
+    @include screen-max(m) {
+        &:has(.hero__backdrop--mobile) {
+            .hero__content {
+                padding-top: 50vw;
+            }
+        }
+    }
+
+    @include screen-min(m) {
+        &__backdrop {
+            &--desktop {
+                display: block;
+            }
+
+            &--mobile {
+                display: none;
+            }
+        }
     }
 }

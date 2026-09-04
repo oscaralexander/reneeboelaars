@@ -1,4 +1,5 @@
 {% set image = section.image.one() %}
+{% set imageMobile = section.imageMobile.one() %}
 
 {%
     set classNames = [
@@ -16,18 +17,26 @@
     {% if image %}
         <img
             alt="{{ image.title }}"
-            class="hero__backdrop"
+            class="hero__backdrop hero__backdrop--desktop"
             sizes="100vw"
-            src="{{ image.getUrl({ format: 'webp', upscale: false, width: 2048 }) }}"
+            src="{{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 2880 }) }}"
             srcset="
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 480 }) }} 480w,
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 592 }) }} 592w,
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 768 }) }} 768w,
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 1024 }) }} 1024w,
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 1184 }) }} 1184w,
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 1536 }) }} 1536w,
-                {{ image.getUrl({ format: 'webp', upscale: false, width: 2048 }) }} 2048w
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 480 }) }} 480w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 592 }) }} 592w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 768 }) }} 768w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 1024 }) }} 1024w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 1184 }) }} 1184w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 1536 }) }} 1536w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 2048 }) }} 2048w,
+                {{ image.getUrl({ format: 'webp', quality: 95, upscale: false, width: 2880 }) }} 2880w
             "
+        >
+    {% endif %}
+    {% if imageMobile %}
+        <img
+            alt="{{ imageMobile.title }}"
+            class="hero__backdrop hero__backdrop--mobile"
+            src="{{ imageMobile.getUrl({ format: 'webp', quality: 95, upscale: false, width: 1080 }) }}"
         >
     {% endif %}
     <div class="wrapper section__inner">

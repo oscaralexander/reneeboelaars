@@ -33,7 +33,7 @@
         <link rel="icon" href="/favicon.png" type="image/png">
         {% include '_partials/schema' %}
         {% block schema %}{% endblock %}
-{{ craft.vite.script('src/js/index.js', false, { 'defer': true }) }}
+        {{ craft.vite.script('src/js/index.js', false, { 'defer': true }) }}
         <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>

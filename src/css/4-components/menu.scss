@@ -26,7 +26,7 @@
         }
     }
 
-    @include screen-max(m) {
+    @include screen-max(l) {
         display: block;
         flex: 1;
         overflow: auto;

@@ -43,6 +43,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2026-09-04T09:33:12+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 396d98f5-7aa5-4297-aac0-6ad7d2625db0 # Image
+            handle: imageMobile
+            instructions: 'Recommended dimensions 1080 x 1080 px.'
+            label: 'Image (mobile)'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b74d4199-842d-41a9-9402-d80db5c26706
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-07-25T11:25:53+00:00'
             editCondition: null
             elementCondition: null
