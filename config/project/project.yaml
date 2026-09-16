@@ -1,4 +1,4 @@
-dateModified: 1788514392
+dateModified: 1788521133
 elementSources:
   craft\elements\Entry:
     -
@@ -228,7 +228,7 @@ plugins:
   mcp:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 1.4.0
   vite:
     edition: standard
     enabled: true
@@ -238,5 +238,5 @@ system:
   live: true
   name: 'Renee Boelaars'
   retryDuration: null
-  schemaVersion: 5.10.0.0
+  schemaVersion: 5.11.0.2
   timeZone: Europe/Amsterdam
