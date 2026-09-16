@@ -23,7 +23,6 @@
 
                 .accordionItem__body {
                     opacity: 1;
-                    transform: scale(1);
                 }
             }
         }
@@ -51,7 +50,6 @@
     &__body {
         opacity: 0;
         padding-bottom: 2rem;
-        transform: scale(0.9);
         transition: var(--duration-m) ease;
         transform-origin: top left;
     }
