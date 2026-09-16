@@ -111,6 +111,7 @@ tabs:
         handle: bio
         instructions: null
         label: Bio
+        oldFieldUid: null
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
@@ -127,6 +128,7 @@ tabs:
         handle: linkedinUrl
         instructions: null
         label: 'LinkedIn URL'
+        oldFieldUid: null
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
@@ -143,6 +145,7 @@ tabs:
         handle: instagramUrl
         instructions: null
         label: 'Instagram URL'
+        oldFieldUid: null
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
@@ -159,6 +162,7 @@ tabs:
         handle: spotifyUrl
         instructions: null
         label: 'Spotify URL'
+        oldFieldUid: null
         required: false
         tip: null
         type: craft\fieldlayoutelements\CustomField
