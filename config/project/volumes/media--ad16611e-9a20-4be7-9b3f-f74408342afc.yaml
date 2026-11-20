@@ -42,6 +42,7 @@ fieldLayouts:
 fs: local
 handle: media
 name: Media
+propagationMethod: custom
 sortOrder: 1
 subpath: media
 titleTranslationKeyFormat: null
